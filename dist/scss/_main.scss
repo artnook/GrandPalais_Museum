@@ -1,0 +1,169 @@
+:root .swiper-button-next,
+.swiper-button-prev {
+  --swiper-theme-color: #fff;
+}
+.main-swiper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination {
+  position: static;
+  margin-top: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+}
+.slide-main {
+  max-width: 1200px;
+  overflow: visible;
+  &::before {
+    content: "";
+    left: 100%;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 100;
+    position: absolute;
+    top: -49px;
+  }
+  &::after {
+    content: "";
+    right: 100%;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 100;
+    position: absolute;
+    top: -49px;
+  }
+  .swiper-wrapper {
+    position: relative;
+  }
+  .swiper-slide {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    // max-width: 1240px;
+    overflow: visible;
+    img {
+      display: block;
+    }
+    .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      box-sizing: content-box;
+    }
+    .slide-intro {
+      margin-top: -70px;
+    }
+    .slide-txt {
+      position: absolute;
+      top: 600px;
+      left: 900px;
+      color: #fff;
+      font-family: Libre Baskerville;
+      font-size: 40px;
+    }
+  }
+}
+.exb-museum {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &::after {
+    content: "";
+    width: calc(100% - 532px);
+    width: 1133px;
+    height: 425px;
+    display: inline-block;
+    background-color: #000;
+    opacity: 0.03;
+    position: absolute;
+    right: 0;
+    top: -87px;
+  }
+  .contetnt_area {
+    z-index: 1;
+    &::before {
+      content: "";
+      width: 1430px;
+      height: 145px;
+      background: url(/images/main/main-g1.png) no-repeat;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      position: absolute;
+      right: 0;
+      bottom: -150px;
+    }
+  }
+  .exb-box {
+    width: 1133px;
+    height: 425px;
+    background: #000;
+    margin: 317px auto;
+    box-shadow: 5px 5px 3px grey;
+    .txt-box {
+      display: block;
+      height: 100%;
+      padding: 130px 68px 56px;
+    }
+    .g_title {
+      position: relative;
+      top: 0;
+      left: -30px;
+      color: #fff;
+      text-align: center;
+      font-family: Libre Baskerville;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .g_tit {
+      position: relative;
+      left: -30px;
+      bottom: 0;
+      width: 523px;
+      color: rgb(255, 255, 255);
+      font-family: "Libre Baskerville";
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .img_box {
+    position: absolute;
+    top: 0;
+    right: 385px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .content_museum {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0 245px;
+  }
+}
+
+.exb-tiket {
+  position: relative;
+  top: 170px;
+  right: 0;
+  width: 1654px;
+  height: 476px;
+  background: #f7f7f7;
+}

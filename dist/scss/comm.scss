@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import "variables", "mixin", "fonts", "reset", "main", "contents";
+
+// comm.scss(css) -
+// 공통요소 : header, footer, button, icon, box
+
+// 공통
+.wrap {
+  padding-top: 70px;
+}
+.container {
+  padding: 0 18.5%;
+}
+.bg-gray {
+  background: $gray-e;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+// header
+#header {
+  // position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  // box-sizing: border-box;
+  border-bottom: 1px solid $b;
+  background: rgba($w, 0);
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // height: $headerHeight;
+  }
+
+  .head__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .lst-util {
+    display: flex;
+    li {
+      display: flex;
+    }
+  }
+
+  .btn-g {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: $headerHeight;
+    .material-icons-outlined {
+      font-size: 36px;
+    }
+    &::before {
+      font-size: 20px;
+      font-family: "Font Awesome 6 Free";
+    }
+  }
+  #logo {
+    position: relative;
+    z-index: 1150;
+  }
+  // .btn-search::before {
+  //   content: "\f002";
+  //   font-weight: 900;
+  // }
+  // .btn-buger::before {
+  //   content: "\f007";
+  //   font-weight: 400;
+  // }
+}
+
+.gnb-wrap {
+  .input-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:checked {
+      // input이 선택 됐을 때 checked
+      & + label {
+        .bar {
+          background: $b;
+          &:nth-child(2) {
+            transform: rotate(45deg) translate(10px, 6px);
+            transform-origin: 50% 50%;
+          }
+          &:nth-child(3) {
+            // display: none;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            transform: rotate(-45deg) translate(10px, -7px);
+            transform-origin: 50% 50%;
+          }
+        }
+      }
+      & ~ #gnb {
+        right: 0;
+      }
+    }
+  }
+
+  .label-burger {
+    position: relative;
+    z-index: 1150;
+    display: flex;
+    width: 40px;
+    height: $headerHeight;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  span {
+    &:nth-child(3) {
+      margin: 10px 0;
+    }
+  }
+  #gnb {
+    position: fixed;
+    top: 0;
+    // left: 100%;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    background: wheat;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s;
+  }
+  .bar {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: $b;
+    transition: all 0.3s;
+  }
+}
+// main
+.section-g {
+  // margin: 50px 0;
+  // padding: 30px;
+  // border: 1px solid $gray-e;
+  // border-radius: 10px;
+  // 위의 경우 네이버같이 보더라인으로 섹션 구분할 때!
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .sec-tit {
+    font-size: 1.4286rem;
+    color: $b;
+  }
+  .sec-contents {
+    margin-top: 20px;
+  }
+}
+.section-shopping {
+  .lst-thumb-two-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: calc(50% - $spacingList / 2);
+      margin-bottom: $spacingList;
+      .thumb-shopping {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        // height: 200px;
+        border-radius: 4px;
+        &::before {
+          content: "";
+          display: block;
+          height: 0;
+          padding-top: 100%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: inherit;
+          background: rgba($b, 0.03);
+          border: 1px solid rgba($b, 0.06);
+        }
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        transition: transform 0.3s;
+      }
+    }
+    a {
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+    .txt-shopping {
+      margin-top: 10px;
+      .txt-shopping__tit {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: $titDefault;
+      }
+      .txt-shopping__desc {
+        font-size: 12px;
+      }
+    }
+  }
+}
+// .section-news {
+//   .a {
+//   }
+//   .b {
+//   }
+//   .c {
+//   }
+// }
+
+// footer
+#footer {
+  .inner {
+    border-top: 10px solid $gray-e;
+  }
+}
