@@ -8,6 +8,10 @@
 .wrap {
   padding-top: 70px;
 }
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .container {
   padding: 0 18.5%;
 }
@@ -50,6 +54,7 @@
   border-bottom: 1px solid $b;
   background: rgba($w, 0);
   .inner {
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;

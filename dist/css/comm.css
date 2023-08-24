@@ -301,79 +301,38 @@ legend {
   content: "";
 }
 
-:root .swiper-button-next,
-.swiper-button-prev {
-  --swiper-theme-color: #fff;
-}
-
-.main-swiper {
+.slide-intro {
   overflow: hidden;
-  width: 100%;
-  height: 100%;
 }
-
-.swiper-pagination {
-  position: static;
-  margin-top: 25px;
-  margin-bottom: 4px;
-  text-align: center;
-  transition: 0.3s opacity;
-  transform: translate3d(0, 0, 0);
-}
-
-.slide-main {
+.slide-intro .splide {
   max-width: 1200px;
-  overflow: visible;
+  margin: 0 auto;
+  position: relative;
 }
-.slide-main::before {
+.slide-intro .splide::before, .slide-intro .splide::after {
   content: "";
-  left: 100%;
-  width: 100vw;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.48);
-  z-index: 100;
   position: absolute;
-  top: -49px;
+  top: 0;
+  z-index: 1;
+  width: 300%;
+  height: 100%;
+  background: #333333;
+  opacity: 0.5;
 }
-.slide-main::after {
-  content: "";
+.slide-intro .splide::before {
   right: 100%;
-  width: 100vw;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.48);
-  z-index: 100;
-  position: absolute;
-  top: -49px;
 }
-.slide-main .swiper-wrapper {
-  position: relative;
+.slide-intro .splide::after {
+  left: 100%;
 }
-.slide-main .swiper-slide {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
+.slide-intro .splide__track {
   overflow: visible;
 }
-.slide-main .swiper-slide img {
-  display: block;
-}
-.slide-main .swiper-slide .swiper-wrapper {
-  position: relative;
+.slide-intro .splide__slide img {
   width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
+  height: auto;
 }
-.slide-main .swiper-slide .slide-intro {
-  margin-top: -70px;
-}
-.slide-main .swiper-slide .slide-txt {
+.slide-intro .slide-txt {
   position: absolute;
   top: 600px;
   left: 900px;
@@ -392,28 +351,26 @@ legend {
   width: calc(100% - 532px);
   width: 1133px;
   height: 425px;
-  display: inline-block;
   background-color: #000;
   opacity: 0.03;
   position: absolute;
-  right: 0;
+  right: -230px;
   top: -87px;
 }
 .exb-museum .contetnt_area::before {
   content: "";
-  width: 1430px;
-  height: 145px;
+  width: 677px;
+  height: 186px;
   background: url(/images/main/main-g1.png) no-repeat;
-  display: inline-block;
   background-repeat: no-repeat;
   background-position: 50%;
   position: absolute;
-  right: 0;
-  bottom: -150px;
+  right: 130px;
+  bottom: -170px;
 }
 .exb-museum .exb-box {
   position: relative;
-  width: 1133px;
+  width: 1192px;
   height: 425px;
   background: #000;
   margin: 317px auto;
@@ -431,7 +388,6 @@ legend {
   /* max-width: 420px; */
   height: 39px;
   width: auto;
-  display: inline-block;
 }
 .exb-museum .exb-box .nav-box button em {
   color: #fff;
@@ -450,22 +406,25 @@ legend {
   text-align: center;
   font-family: Libre Baskerville;
   font-size: 35px;
-  font-style: normal;
   font-weight: 400;
 }
 .exb-museum .exb-box .g_tit {
-  position: relative;
-  left: -30px;
-  bottom: 0;
+  position: absolute;
+  left: 40px;
+  top: 180px;
   width: 523px;
   color: rgb(255, 255, 255);
   font-family: "Libre Baskerville";
   font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
-.exb-museum .btn_wrap .btn_more {
+.exb-museum .btn_wrap {
+  margin-top: 57px;
+  position: absolute;
+  left: 70px;
+  bottom: 25px;
+}
+.exb-museum .btn_more {
   display: block;
   width: 180px;
   height: 50px;
@@ -474,7 +433,7 @@ legend {
   letter-spacing: -0.07em;
   margin: 30px -30px;
 }
-.exb-museum .btn_wrap .btn_more span {
+.exb-museum .btn_more span {
   display: block;
   margin: 10px;
   color: #fff;
@@ -498,11 +457,65 @@ legend {
   padding: 0 245px;
 }
 
+.exb_tiket {
+  position: relative;
+  top: 310px;
+  left: 0;
+  width: 1654px;
+  height: 476px;
+}
+.exb_tiket::before {
+  content: "";
+  width: 1550px;
+  height: 475px;
+  position: absolute;
+  right: 340px;
+  bottom: 0;
+  background-color: #f7f7f7;
+}
+.exb_tiket .tiket_tit::after {
+  content: "";
+  background: url(/images/main/main_reservation.png);
+  width: 512px;
+  height: 102px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: absolute;
+  left: 110px;
+  top: -70px;
+}
+.exb_tiket .t_title {
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  color: #333333;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  line-height: normal;
+}
+.exb_tiket .t_tit {
+  position: absolute;
+  left: 125px;
+  bottom: 230px;
+  width: 626px;
+  height: 56px;
+  color: #333333;
+  font-family: Libre Baskerville;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.area3 {
+  width: 100%;
+  overflow: hidden;
+}
 .area3 .wrapper {
   width: 100%;
   max-width: 1467px;
-  margin: 330px auto;
+  margin: 0 auto;
   position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
 }
@@ -637,6 +650,11 @@ legend {
   padding-top: 70px;
 }
 
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .container {
   padding: 0 18.5%;
 }
@@ -676,6 +694,7 @@ legend {
   background: rgba(255, 255, 255, 0);
 }
 #header .inner {
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;

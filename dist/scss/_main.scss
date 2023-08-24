@@ -1,79 +1,42 @@
-:root .swiper-button-next,
-.swiper-button-prev {
-  --swiper-theme-color: #fff;
-}
-.main-swiper {
+.slide-intro {
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-.swiper-pagination {
-  position: static;
-  margin-top: 25px;
-  margin-bottom: 4px;
-  text-align: center;
-  transition: 0.3s opacity;
-  transform: translate3d(0, 0, 0);
-}
-.slide-main {
-  max-width: 1200px;
-  overflow: visible;
-  &::before {
-    content: "";
-    left: 100%;
-    width: 100vw;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.48);
-    z-index: 100;
-    position: absolute;
-    top: -49px;
-  }
-  &::after {
-    content: "";
-    right: 100%;
-    width: 100vw;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.48);
-    z-index: 100;
-    position: absolute;
-    top: -49px;
-  }
-  .swiper-wrapper {
+  .splide {
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
-  }
-  .swiper-slide {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-    // max-width: 1240px;
-    overflow: visible;
-    img {
-      display: block;
-    }
-    .swiper-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      display: flex;
-      transition-property: transform;
-      box-sizing: content-box;
-    }
-    .slide-intro {
-      margin-top: -70px;
-    }
-    .slide-txt {
+    // 양쪽 필터
+    &::before,
+    &::after {
+      content: "";
       position: absolute;
-      top: 600px;
-      left: 900px;
-      color: #fff;
-      font-family: Libre Baskerville;
-      font-size: 40px;
+      top: 0;
+      z-index: 1;
+      width: 300%;
+      height: 100%;
+      background: #333333;
+      opacity: 0.5;
     }
+    &::before {
+      right: 100%;
+    }
+    &::after {
+      left: 100%;
+    }
+  }
+  .splide__track {
+    overflow: visible;
+  }
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  .slide-txt {
+    position: absolute;
+    top: 600px;
+    left: 900px;
+    color: #fff;
+    font-family: Libre Baskerville;
+    font-size: 40px;
   }
 }
 .exb-museum {
@@ -85,30 +48,28 @@
     width: calc(100% - 532px);
     width: 1133px;
     height: 425px;
-    display: inline-block;
     background-color: #000;
     opacity: 0.03;
     position: absolute;
-    right: 0;
+    right: -230px;
     top: -87px;
   }
   .contetnt_area {
     &::before {
       content: "";
-      width: 1430px;
-      height: 145px;
+      width: 677px;
+      height: 186px;
       background: url(/images/main/main-g1.png) no-repeat;
-      display: inline-block;
       background-repeat: no-repeat;
       background-position: 50%;
       position: absolute;
-      right: 0;
-      bottom: -150px;
+      right: 130px;
+      bottom: -170px;
     }
   }
   .exb-box {
     position: relative;
-    width: 1133px;
+    width: 1192px;
     height: 425px;
     background: #000;
     margin: 317px auto;
@@ -125,7 +86,6 @@
       /* max-width: 420px; */
       height: 39px;
       width: auto;
-      display: inline-block;
       em {
         color: #fff;
         text-align: center;
@@ -144,23 +104,26 @@
       text-align: center;
       font-family: Libre Baskerville;
       font-size: 35px;
-      font-style: normal;
       font-weight: 400;
     }
     .g_tit {
-      position: relative;
-      left: -30px;
-      bottom: 0;
+      position: absolute;
+      left: 40px;
+      top: 180px;
       width: 523px;
       color: rgb(255, 255, 255);
       font-family: "Libre Baskerville";
       font-size: 17px;
-      font-style: normal;
-      font-weight: 400;
       line-height: normal;
     }
   }
-  .btn_wrap .btn_more {
+  .btn_wrap {
+    margin-top: 57px;
+    position: absolute;
+    left: 70px;
+    bottom: 25px;
+  }
+  .btn_more {
     display: block;
     width: 180px;
     height: 50px;
@@ -193,13 +156,65 @@
     padding: 0 245px;
   }
 }
-
+.exb_tiket {
+  position: relative;
+  top: 310px;
+  left: 0;
+  width: 1654px;
+  height: 476px;
+  &::before {
+    content: "";
+    width: 1550px;
+    height: 475px;
+    position: absolute;
+    right: 340px;
+    bottom: 0;
+    background-color: #f7f7f7;
+  }
+  .tiket_tit {
+    &::after {
+      content: "";
+      background: url(/images/main/main_reservation.png);
+      width: 512px;
+      height: 102px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      position: absolute;
+      left: 110px;
+      top: -70px;
+    }
+  }
+  .t_title {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    color: #333333;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    line-height: normal;
+  }
+  .t_tit {
+    position: absolute;
+    left: 125px;
+    bottom: 230px;
+    width: 626px;
+    height: 56px;
+    color: #333333;
+    font-family: Libre Baskerville;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
 .area3 {
+  width: 100%;
+  overflow: hidden;
   .wrapper {
     width: 100%;
     max-width: 1467px;
-    margin: 330px auto;
+    margin: 0 auto;
     position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
   }
