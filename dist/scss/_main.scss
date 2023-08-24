@@ -68,48 +68,43 @@
     }
   }
   .exb-box {
-    position: relative;
+    display: flex;
     width: 1192px;
     height: 425px;
     background: #000;
     margin: 317px auto;
     box-shadow: 5px 5px 3px grey;
     .txt-box {
-      display: block;
-      height: 100%;
-      padding: 130px 68px 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: -70px;
     }
-    .nav-box button {
-      position: absolute;
-      left: 40px;
-      top: 60px;
-      /* max-width: 420px; */
-      height: 39px;
-      width: auto;
-      em {
+    .nav-box {
+      display: flex;
+    }
+    .nav-box .exb_tit {
+      display: flex;
+      width: 69px;
+      height: 19px;
+      margin-top: 50px;
+      margin-left: 70px;
+      p {
         color: #fff;
         text-align: center;
         font-family: Roboto;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        display: flex;
       }
     }
     .g_title {
-      position: relative;
-      top: 0;
-      left: -30px;
       color: #fff;
-      text-align: center;
+
       font-family: Libre Baskerville;
       font-size: 35px;
       font-weight: 400;
     }
     .g_tit {
-      position: absolute;
-      left: 40px;
-      top: 180px;
       width: 523px;
       color: rgb(255, 255, 255);
       font-family: "Libre Baskerville";
@@ -118,19 +113,19 @@
     }
   }
   .btn_wrap {
-    margin-top: 57px;
     position: absolute;
-    left: 70px;
-    bottom: 25px;
+    bottom: 30px;
+    left: 240px;
   }
   .btn_more {
-    display: block;
+    display: flex;
     width: 180px;
     height: 50px;
     border-radius: 0px;
     border: 1px solid #fff;
     letter-spacing: -0.07em;
-    margin: 30px -30px;
+    margin-left: -46px;
+    justify-content: center;
     span {
       display: block;
       margin: 10px;
@@ -141,11 +136,8 @@
     }
   }
   .img_box {
-    position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
-    justify-content: flex-end;
+    padding-left: 20px;
   }
   .content_museum {
     max-width: 1920px;
