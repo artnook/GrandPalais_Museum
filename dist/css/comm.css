@@ -305,7 +305,7 @@ legend {
   overflow: hidden;
 }
 .slide-intro .splide {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
@@ -334,11 +334,15 @@ legend {
 }
 .slide-intro .slide-txt {
   position: absolute;
-  top: 600px;
-  left: 900px;
+  top: 660px;
+  left: 1110px;
   color: #fff;
   font-family: Libre Baskerville;
   font-size: 40px;
+}
+
+.museum {
+  overflow: hidden;
 }
 
 .exb-museum {
@@ -349,7 +353,7 @@ legend {
 .exb-museum::after {
   content: "";
   width: calc(100% - 532px);
-  width: 1133px;
+  max-width: 1133px;
   height: 425px;
   background-color: #000;
   opacity: 0.03;
@@ -358,19 +362,17 @@ legend {
   top: -87px;
 }
 .exb-museum .contetnt_area::before {
-  content: "";
-  width: 677px;
-  height: 186px;
-  background: url(/images/main/main-g1.png) no-repeat;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  content: "Museum";
+  font-size: 200px;
+  letter-spacing: -14px;
   position: absolute;
-  right: 130px;
-  bottom: -170px;
+  right: 0px;
+  bottom: -240px;
+  font-family: Libre Baskerville;
 }
 .exb-museum .exb-box {
   display: flex;
-  width: 1192px;
+  justify-content: space-between;
   height: 425px;
   background: #000;
   margin: 317px auto;
@@ -379,8 +381,15 @@ legend {
 .exb-museum .exb-box .txt-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: -70px;
+  align-items: flex-start;
+  padding: 40px;
+}
+.exb-museum .exb-box .txt-box h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  display: flex;
 }
 .exb-museum .exb-box .nav-box {
   display: flex;
@@ -392,14 +401,8 @@ legend {
   margin-top: 50px;
   margin-left: 70px;
 }
-.exb-museum .exb-box .nav-box .exb_tit p {
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  display: flex;
-}
 .exb-museum .exb-box .g_title {
+  margin-top: 20px;
   color: #fff;
   font-family: Libre Baskerville;
   font-size: 35px;
@@ -407,37 +410,35 @@ legend {
 }
 .exb-museum .exb-box .g_tit {
   width: 523px;
-  color: rgb(255, 255, 255);
+  margin-top: 22px;
+  color: #fff;
   font-family: "Libre Baskerville";
   font-size: 17px;
   line-height: normal;
-}
-.exb-museum .btn_wrap {
-  position: absolute;
-  bottom: 30px;
-  left: 240px;
 }
 .exb-museum .btn_more {
   display: flex;
   width: 180px;
   height: 50px;
-  border-radius: 0px;
-  border: 1px solid #fff;
-  letter-spacing: -0.07em;
-  margin-left: -46px;
+  margin-top: auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   justify-content: center;
-}
-.exb-museum .btn_more span {
-  display: block;
-  margin: 10px;
+  align-items: center;
   color: #fff;
-  font-family: Roboto;
   font-size: 20px;
-  font-weight: 700;
+  font-family: Roboto;
 }
 .exb-museum .img_box {
   display: flex;
+  width: 50%;
   padding-left: 20px;
+}
+.exb-museum .img_box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .exb-museum .content_museum {
   max-width: 1920px;
@@ -448,53 +449,79 @@ legend {
   padding: 0 245px;
 }
 
-.exb_tiket {
-  position: relative;
-  top: 310px;
-  left: 0;
-  width: 1654px;
-  height: 476px;
-}
-.exb_tiket::before {
-  content: "";
-  width: 1550px;
-  height: 475px;
-  position: absolute;
-  right: 340px;
-  bottom: 0;
+.tiket {
+  width: 100%;
   background-color: #f7f7f7;
 }
-.exb_tiket .tiket_tit::after {
-  content: "";
-  background: url(/images/main/main_reservation.png);
-  width: 512px;
-  height: 102px;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  position: absolute;
-  left: 110px;
-  top: -70px;
+.tiket .inner {
+  display: flex;
 }
-.exb_tiket .t_title {
-  position: absolute;
-  top: 80px;
-  left: 120px;
+
+.exb_tiket {
+  position: relative;
+  width: 60%;
+  height: 475px;
+}
+.exb_tiket .tiket_tit {
+  transform: translateY(-70px);
+  font-size: 80px;
+  font-family: Libre Baskerville;
+}
+.exb_tiket .tiket_txt_box h2 {
   color: #333333;
-  text-align: center;
   font-family: Roboto;
   font-size: 40px;
-  line-height: normal;
+  margin-bottom: 10px;
 }
-.exb_tiket .t_tit {
-  position: absolute;
-  left: 125px;
-  bottom: 230px;
-  width: 626px;
-  height: 56px;
+.exb_tiket .tiket_txt_box p {
   color: #333333;
   font-family: Libre Baskerville;
   font-size: 20px;
-  line-height: normal;
+}
+.exb_tiket .btn_more {
+  display: flex;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #333333;
+  margin-top: 120px;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 20px;
+}
+.exb_tiket .slide-intro .splide {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.exb_tiket .slide-intro .splide::before, .exb_tiket .slide-intro .splide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 300%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+}
+.exb_tiket .slide-intro .splide::before {
+  right: 100%;
+  background-color: white;
+  opacity: 1;
+}
+.exb_tiket .slide-intro .splide::after {
+  left: 100%;
+}
+.exb_tiket .slide-intro .splide__track {
+  overflow: visible;
+}
+.exb_tiket .slide-intro .splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.clock {
+  margin-top: 330px;
 }
 
 .area3 {
@@ -591,7 +618,7 @@ legend {
 .area3 .text-sub3 {
   color: #333;
   text-align: center;
-  font-family: Roboto;
+  font-family: Libre Baskerville;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -624,13 +651,47 @@ legend {
   transform: rotate(0);
 }
 
-.exb-tiket {
+.circle {
+  display: flex;
+  margin: 60px 0;
+}
+.circle .txt_box {
+  width: calc(100% - 235px);
+  padding-right: 250px;
+}
+.circle .txt_box h2 {
+  color: #333;
+  font-family: Roboto;
+  font-size: 45px;
+  line-height: 1.5;
+  margin-top: 160px;
+}
+.circle #spin {
+  -webkit-animation: spin 20s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+  }
+}
+.circle .img_prance {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle .txt_box_right {
   position: relative;
-  top: 170px;
-  right: 0;
-  width: 1654px;
-  height: 476px;
-  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 840px;
+  margin-top: -250px;
 }
 
 .contents {
@@ -674,6 +735,39 @@ legend {
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: "liga";
+}
+
+.splide__track {
+  overflow: visible;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.btn_line {
+  display: inline-flex;
+  height: 50px;
+  padding: 0 15px;
+  margin-top: 50px;
+  border: 1px solid #333;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 18px;
+}
+.btn_line.white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn_line::after {
+  content: "\f178";
+  margin-left: 10px;
+  margin-bottom: -2px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 14px;
 }
 
 #header {

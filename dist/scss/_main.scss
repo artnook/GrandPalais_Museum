@@ -1,7 +1,7 @@
 .slide-intro {
   overflow: hidden;
   .splide {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
     // 양쪽 필터
@@ -32,12 +32,15 @@
   }
   .slide-txt {
     position: absolute;
-    top: 600px;
-    left: 900px;
-    color: #fff;
+    top: 660px;
+    left: 1110px;
+    color: $w;
     font-family: Libre Baskerville;
     font-size: 40px;
   }
+}
+.museum {
+  overflow: hidden;
 }
 .exb-museum {
   position: relative;
@@ -46,7 +49,7 @@
   &::after {
     content: "";
     width: calc(100% - 532px);
-    width: 1133px;
+    max-width: 1133px;
     height: 425px;
     background-color: #000;
     opacity: 0.03;
@@ -56,20 +59,19 @@
   }
   .contetnt_area {
     &::before {
-      content: "";
-      width: 677px;
-      height: 186px;
-      background: url(/images/main/main-g1.png) no-repeat;
-      background-repeat: no-repeat;
-      background-position: 50%;
+      content: "Museum";
+      font-size: 200px;
+      letter-spacing: -14px;
       position: absolute;
-      right: 130px;
-      bottom: -170px;
+      right: 0px;
+      bottom: -240px;
+      font-family: Libre Baskerville;
     }
   }
   .exb-box {
     display: flex;
-    width: 1192px;
+    justify-content: space-between;
+    // width: 1192px;
     height: 425px;
     background: #000;
     margin: 317px auto;
@@ -77,8 +79,15 @@
     .txt-box {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin-left: -70px;
+      align-items: flex-start;
+      padding: 40px;
+      h2 {
+        color: $w;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        display: flex;
+      }
     }
     .nav-box {
       display: flex;
@@ -89,16 +98,10 @@
       height: 19px;
       margin-top: 50px;
       margin-left: 70px;
-      p {
-        color: #fff;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        display: flex;
-      }
     }
     .g_title {
-      color: #fff;
+      margin-top: 20px;
+      color: $w;
 
       font-family: Libre Baskerville;
       font-size: 35px;
@@ -106,38 +109,37 @@
     }
     .g_tit {
       width: 523px;
-      color: rgb(255, 255, 255);
+      margin-top: 22px;
+      color: $w;
       font-family: "Libre Baskerville";
       font-size: 17px;
       line-height: normal;
     }
   }
   .btn_wrap {
-    position: absolute;
-    bottom: 30px;
-    left: 240px;
   }
   .btn_more {
     display: flex;
     width: 180px;
     height: 50px;
-    border-radius: 0px;
-    border: 1px solid #fff;
-    letter-spacing: -0.07em;
-    margin-left: -46px;
+    margin-top: auto;
+    border: 1px solid rgba($w, 0.5);
     justify-content: center;
-    span {
-      display: block;
-      margin: 10px;
-      color: #fff;
-      font-family: Roboto;
-      font-size: 20px;
-      font-weight: 700;
-    }
+    align-items: center;
+    color: $w;
+    font-size: 20px;
+    font-family: Roboto;
   }
   .img_box {
     display: flex;
+    width: 50%;
     padding-left: 20px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .content_museum {
     max-width: 1920px;
@@ -148,55 +150,85 @@
     padding: 0 245px;
   }
 }
+.tiket {
+  width: 100%;
+  background-color: #f7f7f7;
+  .inner {
+    display: flex;
+  }
+}
 .exb_tiket {
   position: relative;
-  top: 310px;
-  left: 0;
-  width: 1654px;
-  height: 476px;
-  &::before {
-    content: "";
-    width: 1550px;
-    height: 475px;
-    position: absolute;
-    right: 340px;
-    bottom: 0;
-    background-color: #f7f7f7;
-  }
+  width: 60%;
+  height: 475px;
   .tiket_tit {
-    &::after {
-      content: "";
-      background: url(/images/main/main_reservation.png);
-      width: 512px;
-      height: 102px;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      position: absolute;
-      left: 110px;
-      top: -70px;
+    transform: translateY(-70px);
+    font-size: 80px;
+    font-family: Libre Baskerville;
+  }
+  .tiket_txt_box {
+    h2 {
+      color: #333333;
+      font-family: Roboto;
+      font-size: 40px;
+      margin-bottom: 10px;
     }
   }
-  .t_title {
-    position: absolute;
-    top: 80px;
-    left: 120px;
-    color: #333333;
-    text-align: center;
+  .tiket_txt_box {
+    p {
+      color: #333333;
+      font-family: Libre Baskerville;
+      font-size: 20px;
+    }
+  }
+  .btn_more {
+    display: flex;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #333333;
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
     font-family: Roboto;
-    font-size: 40px;
-    line-height: normal;
-  }
-  .t_tit {
-    position: absolute;
-    left: 125px;
-    bottom: 230px;
-    width: 626px;
-    height: 56px;
-    color: #333333;
-    font-family: Libre Baskerville;
     font-size: 20px;
-    line-height: normal;
   }
+  .slide-intro {
+    .splide {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      // 양쪽 필터
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 300%;
+        height: 100%;
+        background-color: white;
+        opacity: 0.5;
+      }
+      &::before {
+        right: 100%;
+        background-color: white;
+        opacity: 1;
+      }
+      &::after {
+        left: 100%;
+      }
+    }
+    .splide__track {
+      overflow: visible;
+    }
+    .splide__slide img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.clock {
+  margin-top: 330px;
 }
 .area3 {
   width: 100%;
@@ -293,7 +325,7 @@
   .text-sub3 {
     color: #333;
     text-align: center;
-    font-family: Roboto;
+    font-family: Libre Baskerville;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -328,11 +360,47 @@
   }
 }
 
-.exb-tiket {
-  position: relative;
-  top: 170px;
-  right: 0;
-  width: 1654px;
-  height: 476px;
-  background: #f7f7f7;
+.circle {
+  display: flex;
+  margin: 60px 0;
+  .txt_box {
+    width: calc(100% - 235px);
+    padding-right: 250px;
+    h2 {
+      color: #333;
+      font-family: Roboto;
+      font-size: 45px;
+      line-height: 1.5;
+      margin-top: 160px;
+    }
+  }
+  #spin {
+    -webkit-animation: spin 20s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0turn);
+    }
+
+    100% {
+      -webkit-transform: rotate(1turn);
+    }
+  }
+
+  .img_prance {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .txt_box_right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 840px;
+    margin-top: -250px;
+  }
 }
