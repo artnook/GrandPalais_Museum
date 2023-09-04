@@ -41,6 +41,7 @@
 }
 .museum {
   overflow: hidden;
+  height: 1220px;
 }
 .exb-museum {
   position: relative;
@@ -159,7 +160,7 @@
 }
 .exb_tiket {
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 475px;
   .tiket_tit {
     transform: translateY(-70px);
@@ -192,31 +193,11 @@
     font-family: Roboto;
     font-size: 20px;
   }
-  .slide-intro {
+  .slide-tiket {
     .splide {
       max-width: 800px;
       margin: 0 auto;
       position: relative;
-      // 양쪽 필터
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        width: 300%;
-        height: 100%;
-        background-color: white;
-        opacity: 0.5;
-      }
-      &::before {
-        right: 100%;
-        background-color: white;
-        opacity: 1;
-      }
-      &::after {
-        left: 100%;
-      }
     }
     .splide__track {
       overflow: visible;
@@ -227,8 +208,24 @@
     }
   }
 }
+.slide-tiket {
+  margin: -100px 0;
+  .splide {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .splide__track {
+    overflow: visible;
+  }
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+}
 .clock {
   margin-top: 330px;
+  position: relative;
 }
 .area3 {
   width: 100%;
@@ -330,11 +327,15 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    position: absolute;
+    bottom: 80px;
   }
   .box-clock {
     margin-left: -59rem;
     position: absolute;
     left: 50%;
+    top: -10%;
+    z-index: 1;
   }
 }
 .box-clock {

@@ -138,7 +138,25 @@
               </div>
               <a href="#" class="btn btn_line"> 자세히 보기 </a>
             </div>
-            <!-- <div class="slide-wrap">
+            <!-- <div class="slide-tiket">
+              <div
+                id="image-carousel"
+                class="tiket"
+                aria-label="Beautiful Images"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="./images/main/tiket img1.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./images/main/tiket img2.png" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+            <div class="slide-tiket">
               <div
                 id="image-carousel"
                 class="splide-tiket"
@@ -147,27 +165,33 @@
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide">
-                      <img
-                        src="https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                        alt=""
-                      />
+                      <img src="./images/main/tiket img1.png" alt="" />
                     </li>
                     <li class="splide__slide">
-                      <img
-                        src="https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                        alt=""
-                      />
+                      <img src="./images/main/tiket img2.png" alt="" />
                     </li>
                     <li class="splide__slide">
-                      <img
-                        src="https://images.unsplash.com/photo-1682695794816-7b9da18ed470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                        alt=""
-                      />
+                      <img src="./images/main/tiket img1.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./images/main/tiket img2.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./images/main/tiket img1.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./images/main/tiket img2.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./images/main/tiket img1.png" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="./images/main/tiket img2.png" alt="" />
                     </li>
                   </ul>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </section>
         <section class="clock">
@@ -191,140 +215,138 @@
                     France from the 1900s
                   </p>
                   <p class="text-date">AUG 25TH. 2023</p>
-                  <div ="clock"
-                    <p id="display">00:00:00</p>
-                  </div>
-                  <p class="text-sub3">
-                    Grand Palais is a cultural operator whose mission is to
-                    promote
-                    <br />
-                    access to culture throughout the country and beyond.
-                  </p>
+                  <p id="display">00:00:00</p>
                 </div>
-                <div class="box-clock">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="1924"
-                    height="2248"
-                    viewBox="0 0 1924 2248"
-                  >
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: #333;
-                          stroke: #333;
-                        }
-
-                        .cls-1 {
-                          stroke-linecap: round;
-                          stroke-linejoin: round;
-                          stroke-width: 16px;
-                          fill-rule: evenodd;
-                        }
-
-                        .cls-2 {
-                          stroke-width: 1px;
-                          filter: url(#filter);
-                        }
-                      </style>
-                      <filter
-                        id="filter"
-                        x="834"
-                        y="1015"
-                        width="257"
-                        height="257"
-                        filterUnits="userSpaceOnUse"
-                      >
-                        <feOffset result="offset" dy="19" in="SourceAlpha" />
-                        <feGaussianBlur result="blur" stdDeviation="8.718" />
-                        <feFlood result="flood" flood-opacity="0.4" />
-                        <feComposite
-                          result="composite"
-                          operator="in"
-                          in2="blur"
-                        />
-                        <feBlend result="blend" in="SourceGraphic" />
-                      </filter>
-                    </defs>
+                <p class="text-sub3">
+                  Grand Palais is a cultural operator whose mission is to
+                  promote
+                  <br />
+                  access to culture throughout the country and beyond.
+                </p>
+              </div>
+              <div class="box-clock">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="1924"
+                  height="2248"
+                  viewBox="0 0 1924 2248"
+                >
+                  <defs>
                     <style>
-                      #svg-clock-minute,
-                      #svg-clock-hour,
-                      #svg-clock-second {
-                        transform-origin: 50%;
-                        transform: rotate(0);
+                      .cls-1,
+                      .cls-2 {
+                        fill: #333;
+                        stroke: #333;
                       }
-                      #svg-group-minute,
-                      #svg-group-hour,
-                      #svg-group-second {
-                        transform-origin: 50%;
-                        animation-name: rotate;
-                        animation-iteration-count: infinite;
-                        transform: rotate(0);
+
+                      .cls-1 {
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 16px;
+                        fill-rule: evenodd;
                       }
-                      #svg-group-minute {
-                        animation-duration: 3600s;
-                        animation-timing-function: linear;
-                      }
-                      #svg-group-hour {
-                        animation-duration: 43200s;
-                        animation-timing-function: linear;
-                      }
-                      #svg-group-second {
-                        animation-duration: 60s;
-                        animation-timing-function: steps(60, end);
-                      }
-                      @keyframes rotate {
-                        0% {
-                          transfrom: rotate(0deg);
-                        }
-                        to {
-                          transform: rotate(360deg);
-                        }
+
+                      .cls-2 {
+                        stroke-width: 1px;
+                        filter: url(#filter);
                       }
                     </style>
-                    <image
-                      id="svg-group-minute"
-                      x="956"
-                      y="259"
-                      width="12"
-                      height="865"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAANhCAYAAADT91r+AAAAoklEQVR4nO3LsQEAIAzDsMBL/f82uKFz5Nk6M/Oy6G7mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgHAAAAAAAAAAAAVSDJBx60CFqSY0MZAAAAAElFTkSuQmCC"
-                    />
-                    <path
-                      id="svg-group-hour"
-                      class="cls-1"
-                      d="M961.891,1123.95l588.219,422.1Z"
-                    />
-                    <image
-                      id="svg-group-second"
-                      x="959"
-                      y="205"
-                      width="6"
-                      height="1130"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAARqCAYAAABrtQR6AAAAbUlEQVR4nO3JMQEAIAzEwAcLmMZ1MdCRrZcxt86tStPuZgAAAAAAAAAAAAAAAAAAAMYDAAAAAAAAAAAAAAAAgPEAAAAAAAAAAAAAAAAAYDwAAAAAAAAAAAAAAAAAGA8AAAAAAAAAAAAAAPyHJA9UpgttIjFsdwAAAABJRU5ErkJggg=="
-                    />
-                    <g style="fill: #333; filter: url(#filter)">
-                      <circle
-                        id="circle"
-                        class="cls-2"
-                        cx="962"
-                        cy="1124"
-                        r="50"
-                        style="stroke: inherit; filter: none; fill: inherit"
+                    <filter
+                      id="filter"
+                      x="834"
+                      y="1015"
+                      width="257"
+                      height="257"
+                      filterUnits="userSpaceOnUse"
+                    >
+                      <feOffset result="offset" dy="19" in="SourceAlpha" />
+                      <feGaussianBlur result="blur" stdDeviation="8.718" />
+                      <feFlood result="flood" flood-opacity="0.4" />
+                      <feComposite
+                        result="composite"
+                        operator="in"
+                        in2="blur"
                       />
-                    </g>
-                    <use
-                      xlink:href="#circle"
-                      style="stroke: #333; filter: none; fill: none"
+                      <feBlend result="blend" in="SourceGraphic" />
+                    </filter>
+                  </defs>
+                  <style>
+                    #svg-clock-minute,
+                    #svg-clock-hour,
+                    #svg-clock-second {
+                      transform-origin: 50%;
+                      transform: rotate(0);
+                    }
+                    #svg-group-minute,
+                    #svg-group-hour,
+                    #svg-group-second {
+                      transform-origin: 50%;
+                      animation-name: rotate;
+                      animation-iteration-count: infinite;
+                      transform: rotate(0);
+                    }
+                    #svg-group-minute {
+                      animation-duration: 3600s;
+                      animation-timing-function: linear;
+                    }
+                    #svg-group-hour {
+                      animation-duration: 43200s;
+                      animation-timing-function: linear;
+                    }
+                    #svg-group-second {
+                      animation-duration: 60s;
+                      animation-timing-function: steps(60, end);
+                    }
+                    @keyframes rotate {
+                      0% {
+                        transfrom: rotate(0deg);
+                      }
+                      to {
+                        transform: rotate(360deg);
+                      }
+                    }
+                  </style>
+                  <image
+                    id="svg-group-minute"
+                    x="956"
+                    y="259"
+                    width="12"
+                    height="865"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAANhCAYAAADT91r+AAAAoklEQVR4nO3LsQEAIAzDsMBL/f82uKFz5Nk6M/Oy6G7mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgHAAAAAAAAAAAAVSDJBx60CFqSY0MZAAAAAElFTkSuQmCC"
+                  />
+                  <path
+                    id="svg-group-hour"
+                    class="cls-1"
+                    d="M961.891,1123.95l588.219,422.1Z"
+                  />
+                  <image
+                    id="svg-group-second"
+                    x="959"
+                    y="205"
+                    width="6"
+                    height="1130"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAARqCAYAAABrtQR6AAAAbUlEQVR4nO3JMQEAIAzEwAcLmMZ1MdCRrZcxt86tStPuZgAAAAAAAAAAAAAAAAAAAMYDAAAAAAAAAAAAAAAAgPEAAAAAAAAAAAAAAAAAYDwAAAAAAAAAAAAAAAAAGA8AAAAAAAAAAAAAAPyHJA9UpgttIjFsdwAAAABJRU5ErkJggg=="
+                  />
+                  <g style="fill: #333; filter: url(#filter)">
+                    <circle
+                      id="circle"
+                      class="cls-2"
+                      cx="962"
+                      cy="1124"
+                      r="50"
+                      style="stroke: inherit; filter: none; fill: inherit"
                     />
-                  </svg>
-                </div>
+                  </g>
+                  <use
+                    xlink:href="#circle"
+                    style="stroke: #333; filter: none; fill: none"
+                  />
+                </svg>
               </div>
             </div>
-          </section>
           </div>
+        </section>
         <section class="circle">
           <div class="inner">
             <div class="txt_box">

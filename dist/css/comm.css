@@ -343,6 +343,7 @@ legend {
 
 .museum {
   overflow: hidden;
+  height: 1220px;
 }
 
 .exb-museum {
@@ -459,7 +460,7 @@ legend {
 
 .exb_tiket {
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 475px;
 }
 .exb_tiket .tiket_tit {
@@ -489,39 +490,38 @@ legend {
   font-family: Roboto;
   font-size: 20px;
 }
-.exb_tiket .slide-intro .splide {
+.exb_tiket .slide-tiket .splide {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
-.exb_tiket .slide-intro .splide::before, .exb_tiket .slide-intro .splide::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  width: 300%;
-  height: 100%;
-  background-color: white;
-  opacity: 0.5;
-}
-.exb_tiket .slide-intro .splide::before {
-  right: 100%;
-  background-color: white;
-  opacity: 1;
-}
-.exb_tiket .slide-intro .splide::after {
-  left: 100%;
-}
-.exb_tiket .slide-intro .splide__track {
+.exb_tiket .slide-tiket .splide__track {
   overflow: visible;
 }
-.exb_tiket .slide-intro .splide__slide img {
+.exb_tiket .slide-tiket .splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-tiket {
+  margin: -100px 0;
+}
+.slide-tiket .splide {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.slide-tiket .splide__track {
+  overflow: visible;
+}
+.slide-tiket .splide__slide img {
   width: 100%;
   height: auto;
 }
 
 .clock {
   margin-top: 330px;
+  position: relative;
 }
 
 .area3 {
@@ -623,11 +623,15 @@ legend {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  position: absolute;
+  bottom: 80px;
 }
 .area3 .box-clock {
   margin-left: -59rem;
   position: absolute;
   left: 50%;
+  top: -10%;
+  z-index: 1;
 }
 
 .box-clock #svg-group-minute {
