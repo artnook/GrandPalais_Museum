@@ -450,61 +450,42 @@ legend {
   padding: 0 245px;
 }
 
-.tiket {
+.sec-calendar {
+  display: flex;
+  height: 500px;
+}
+.sec-calendar img {
+  display: block;
   width: 100%;
-  background-color: #f7f7f7;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
-.tiket .inner {
+.sec-calendar .nav-wrap {
   display: flex;
-}
-
-.exb_tiket {
-  position: relative;
-  width: 75%;
-  height: 475px;
-}
-.exb_tiket .tiket_tit {
-  transform: translateY(-70px);
-  font-size: 80px;
-  font-family: Libre Baskerville;
-}
-.exb_tiket .tiket_txt_box h2 {
-  color: #333333;
-  font-family: Roboto;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-.exb_tiket .tiket_txt_box p {
-  color: #333333;
-  font-family: Libre Baskerville;
-  font-size: 20px;
-}
-.exb_tiket .btn_more {
-  display: flex;
-  width: 180px;
-  height: 50px;
-  border: 1px solid #333333;
-  margin-top: 120px;
-  justify-content: center;
   align-items: center;
-  font-family: Roboto;
-  font-size: 20px;
+  overflow: hidden;
+  width: 60%;
+  background: #054437;
 }
-
-.slide-tiket {
-  margin: -53px 0;
-}
-.slide-tiket .splide {
-  max-width: 800px;
+.sec-calendar .slider-nav {
+  width: 70%;
   margin: 0 auto;
-  position: relative;
 }
-.slide-tiket .splide__track {
+.sec-calendar .slider-nav .slick-slide {
+  height: 400px;
+  padding: 40px;
+}
+.sec-calendar .slider-nav .slick-list {
   overflow: visible;
 }
-.slide-tiket .splide__slide img {
-  width: 100%;
-  height: auto;
+.sec-calendar .slider-for {
+  width: 40%;
+}
+.sec-calendar .slider-for img {
+  height: 500px;
 }
 
 .clock {
@@ -694,7 +675,7 @@ legend {
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
-  font-size: 350px;
+  font-size: 400px;
   font-weight: 400;
   line-height: normal;
 }
@@ -703,9 +684,24 @@ legend {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 57% 0 0;
 }
-#main .content_wrap .ba-mgb-40 {
+#main .ba-mgb-40 {
   display: flex;
+  flex-direction: column;
+  color: #333;
+  font-family: Libre Baskerville;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 26px;
+}
+#main .ba-body {
+  color: #888;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .wrap {
@@ -715,10 +711,6 @@ legend {
 .inner {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.container {
-  padding: 0 18.5%;
 }
 
 .bg-gray {

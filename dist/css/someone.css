@@ -2,7 +2,7 @@
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
-  font-size: 350px;
+  font-size: 400px;
   font-weight: 400;
   line-height: normal;
 }
@@ -11,7 +11,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 57% 0 0;
 }
-#main .content_wrap .ba-mgb-40 {
+#main .ba-mgb-40 {
   display: flex;
+  flex-direction: column;
+  color: #333;
+  font-family: Libre Baskerville;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 26px;
+}
+#main .ba-body {
+  color: #888;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
 }/*# sourceMappingURL=someone.css.map */
