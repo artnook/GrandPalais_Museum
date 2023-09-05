@@ -1,4 +1,9 @@
-#main .brand_top h1 {
+.bnr {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand_top h1 {
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
@@ -6,14 +11,16 @@
   font-weight: 400;
   line-height: normal;
 }
-#main .content_wrap {
+
+.content_wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0 57% 0 0;
 }
-#main .ba-mgb-40 {
+
+.ba-mgb-40 {
   display: flex;
   flex-direction: column;
   color: #333;
@@ -23,7 +30,8 @@
   line-height: normal;
   padding-bottom: 26px;
 }
-#main .ba-body {
+
+.ba-body {
   color: #888;
   font-family: Roboto;
   font-size: 14px;
