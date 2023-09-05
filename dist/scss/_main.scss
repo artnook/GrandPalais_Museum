@@ -49,13 +49,13 @@
   height: 100%;
   &::after {
     content: "";
-    width: calc(100% - 532px);
+    width: 100%;
     max-width: 1133px;
     height: 425px;
     background-color: #000;
     opacity: 0.03;
     position: absolute;
-    right: -230px;
+    right: -340px;
     top: -87px;
   }
   .contetnt_area {
@@ -160,7 +160,7 @@
 }
 .exb_tiket {
   position: relative;
-  width: 50%;
+  width: 75%;
   height: 475px;
   .tiket_tit {
     transform: translateY(-70px);
@@ -193,23 +193,9 @@
     font-family: Roboto;
     font-size: 20px;
   }
-  .slide-tiket {
-    .splide {
-      max-width: 800px;
-      margin: 0 auto;
-      position: relative;
-    }
-    .splide__track {
-      overflow: visible;
-    }
-    .splide__slide img {
-      width: 100%;
-      height: auto;
-    }
-  }
 }
 .slide-tiket {
-  margin: -100px 0;
+  margin: -53px 0;
   .splide {
     max-width: 800px;
     margin: 0 auto;

@@ -1,0 +1,21 @@
+#main {
+  .brand_top {
+    h1 {
+      color: #333;
+      text-align: center;
+      font-family: Libre Baskerville;
+      font-size: 350px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .content_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .ba-mgb-40 {
+      display: flex;
+    }
+  }
+}

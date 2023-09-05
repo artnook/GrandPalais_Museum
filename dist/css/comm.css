@@ -353,13 +353,13 @@ legend {
 }
 .exb-museum::after {
   content: "";
-  width: calc(100% - 532px);
+  width: 100%;
   max-width: 1133px;
   height: 425px;
   background-color: #000;
   opacity: 0.03;
   position: absolute;
-  right: -230px;
+  right: -340px;
   top: -87px;
 }
 .exb-museum .contetnt_area::before {
@@ -460,7 +460,7 @@ legend {
 
 .exb_tiket {
   position: relative;
-  width: 50%;
+  width: 75%;
   height: 475px;
 }
 .exb_tiket .tiket_tit {
@@ -490,21 +490,9 @@ legend {
   font-family: Roboto;
   font-size: 20px;
 }
-.exb_tiket .slide-tiket .splide {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-.exb_tiket .slide-tiket .splide__track {
-  overflow: visible;
-}
-.exb_tiket .slide-tiket .splide__slide img {
-  width: 100%;
-  height: auto;
-}
 
 .slide-tiket {
-  margin: -100px 0;
+  margin: -53px 0;
 }
 .slide-tiket .splide {
   max-width: 800px;
@@ -700,6 +688,24 @@ legend {
 
 .contents {
   height: 300px;
+}
+
+#main .brand_top h1 {
+  color: #333;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 350px;
+  font-weight: 400;
+  line-height: normal;
+}
+#main .content_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#main .content_wrap .ba-mgb-40 {
+  display: flex;
 }
 
 .wrap {
