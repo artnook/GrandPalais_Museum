@@ -453,13 +453,14 @@ legend {
 .sec-calendar {
   display: flex;
   height: 500px;
+  flex-direction: row-reverse;
 }
 .sec-calendar img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
 }
@@ -468,7 +469,6 @@ legend {
   align-items: center;
   overflow: hidden;
   width: 60%;
-  background: #054437;
 }
 .sec-calendar .slider-nav {
   width: 70%;
@@ -477,9 +477,6 @@ legend {
 .sec-calendar .slider-nav .slick-slide {
   height: 400px;
   padding: 40px;
-}
-.sec-calendar .slider-nav .slick-list {
-  overflow: visible;
 }
 .sec-calendar .slider-for {
   width: 40%;
@@ -671,7 +668,12 @@ legend {
   height: 300px;
 }
 
-#main .brand_top h1 {
+.bnr {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand_top h1 {
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
@@ -679,14 +681,16 @@ legend {
   font-weight: 400;
   line-height: normal;
 }
-#main .content_wrap {
+
+.content_wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0 57% 0 0;
 }
-#main .ba-mgb-40 {
+
+.ba-mgb-40 {
   display: flex;
   flex-direction: column;
   color: #333;
@@ -696,7 +700,8 @@ legend {
   line-height: normal;
   padding-bottom: 26px;
 }
-#main .ba-body {
+
+.ba-body {
   color: #888;
   font-family: Roboto;
   font-size: 14px;
