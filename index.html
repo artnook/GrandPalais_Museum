@@ -187,8 +187,8 @@
           </div>
         </section> -->
         <section id="app">
-          <div class="inner">
-            <div class="item">
+          <div class="item">
+            <div class="inner">
               <div class="part image" @click="nextSlide">
                 <transition
                   :css="false"
@@ -212,7 +212,6 @@
                   @leave="leave"
                 >
                   <div class="inner" :key="activeSlide">
-                    <div class="brand">The Landscape Book</div>
                     <div class="centered">
                       <h1>{{ activeItem.title }}</h1>
                       <h3 :style="descriptionColor">

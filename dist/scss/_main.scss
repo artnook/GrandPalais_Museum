@@ -210,20 +210,24 @@
 //   }
 // }
 .item {
-  display: flex;
-  width: 70%;
-  background: #fff;
-  -webkit-box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.27);
-  -moz-box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.27);
-  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.27);
-
+  background: #f7f7f7;
   // margin: 5rem 0rem;
-
-  @media only screen and (max-width: 992px) {
-    display: block;
+  .inner {
+    display: flex;
+    width: 100%;
   }
-  @media only screen and (min-width: 1600px) {
-    width: 1500px;
+  &::before {
+    content: "Reservation";
+    position: absolute;
+    top: 2109px;
+    left: 230px;
+    color: #333;
+    text-align: center;
+    font-family: Libre Baskerville;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: normal;
+    height: 100px;
   }
 }
 
@@ -231,35 +235,29 @@
   position: relative;
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
-  height: 450px;
+  height: 580px;
   overflow: hidden;
   // border: 1px solid black;
   // margin: 2rem;
   // border-radius: 2rem;
   // background: white;
 
-  @media only screen and (max-width: 1199px) {
-    height: 400px;
-  }
-  @media only screen and (min-width: 1600px) {
-    height: 700px;
-  }
-
   &.image {
     order: 2;
     cursor: pointer;
+    position: relative;
+    top: -60px;
+    left: 250px;
 
     .image-slide {
       position: absolute;
       top: 0;
       left: 0;
       display: block;
-      width: 100%;
+      width: 65%;
       height: 100%;
       overflow: hidden;
-      background-position: center center;
       background-repeat: no-repeat;
-      background-size: cover;
     }
 
     img {
@@ -281,31 +279,31 @@
       width: 100%;
       height: 100%;
 
-      .brand {
-        position: absolute;
-        top: 30px;
-        left: 50px;
-        font-weight: 500;
-      }
-
       .centered {
-        max-width: 60%;
+        max-width: 100%;
 
         h1 {
-          font-size: 21px;
-          font-weight: 500;
-          text-transform: uppercase;
+          color: #333;
+          font-family: Roboto;
+          font-size: 40px;
+          line-height: 90px;
         }
 
         h3 {
-          font-size: 16px;
+          color: #333;
+          font-family: Libre Baskerville;
+          font-size: 18px;
           font-weight: 400;
         }
 
         h5 {
           margin: 0;
-          font-size: 13px;
+          color: #333;
+          font-family: Roboto;
+          font-size: 15px;
+          font-style: normal;
           font-weight: 400;
+          line-height: normal;
         }
 
         h6 {
@@ -318,22 +316,19 @@
         button {
           width: 50px;
           height: 50px;
-          margin-top: 10px;
+          margin-top: 50px;
           color: #fff;
           cursor: pointer;
           background-color: $w;
           border: 0;
           border-radius: 50%;
           outline: none;
-          -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
-          -moz-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
         }
       }
       .paginator {
         position: absolute;
         bottom: 20px;
-        left: 50px;
+        left: 0;
         font-size: 14px;
         font-weight: 500;
         cursor: pointer;
