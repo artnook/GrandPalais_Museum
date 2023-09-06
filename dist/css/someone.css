@@ -1,9 +1,46 @@
+@charset "UTF-8";
+.brand_top h1 {
+  color: #333;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 350px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .bnr {
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0.95;
+  padding-bottom: 250px;
+}
+.bnr p {
+  position: relative;
+  top: -350px;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 35px;
+  font-style: normal;
 }
 
-.brand_top h1 {
+#brand_scetion3 .inner {
+  display: grid;
+  grid-column-gap: 6.6rem;
+  margin-top: 100px;
+}
+#brand_scetion3 .reveal:first-child {
+  grid-column: 1/4;
+}
+#brand_scetion3 .reveal:nth-child(2) {
+  grid-column: 7/13;
+}
+#brand_scetion3 .brand_top h1 {
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
@@ -11,16 +48,14 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.content_wrap {
+#brand_scetion3 .content_wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 57% 0 0;
+  padding: 25% 19% 0 0;
 }
-
-.ba-mgb-40 {
+#brand_scetion3 .ba-mgb-40 {
   display: flex;
   flex-direction: column;
   color: #333;
@@ -30,11 +65,93 @@
   line-height: normal;
   padding-bottom: 26px;
 }
-
-.ba-body {
+#brand_scetion3 .ba-body {
   color: #888;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
+}
+#brand_scetion3 .content_wrap {
+  grid-column: 7/13;
+}
+
+#brand_scetion4 {
+  padding: 10% 0 0 0;
+}
+#brand_scetion4 .youtube {
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+#brand_scetion4 .youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
+}
+#brand_scetion4 .youtube .youtube__area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+#brand_scetion4 .youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#brand_scetion4 #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#brand_scetion5 .inner {
+  display: grid;
+  grid-column-gap: 6.6rem;
+  margin-top: 100px;
+}
+#brand_scetion5 .section-title {
+  grid-column: 1/7;
+  width: 100%;
+  color: #333;
+  font-family: Libre Baskerville;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#brand_scetion5 .content_wrap {
+  grid-column: 7/13;
+  padding: 0;
+}
+
+#brand_scetion6 .inner {
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+}
+#brand_scetion6 .reveal {
+  grid-column: 3/2;
+}
+#brand_scetion6 p {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-family: Libre Baskerville;
+  font-size: 50px;
+  font-style: normal;
 }/*# sourceMappingURL=someone.css.map */

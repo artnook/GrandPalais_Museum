@@ -493,6 +493,7 @@ legend {
   height: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
+  border: 1px solid #333333;
 }
 .part.image img {
   position: absolute;
@@ -554,7 +555,7 @@ legend {
 }
 .part.text .inner .paginator {
   position: absolute;
-  bottom: 20px;
+  bottom: 70px;
   left: 0;
   font-size: 14px;
   font-weight: 500;
@@ -787,6 +788,8 @@ legend {
 
 .wrap {
   padding-top: 70px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .inner {

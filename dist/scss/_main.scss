@@ -151,64 +151,6 @@
     padding: 0 245px;
   }
 }
-// .tiket {
-//   width: 100%;
-//   background-color: #f7f7f7;
-//   .inner {
-//     display: flex;
-//   }
-// }
-// .exb_tiket {
-//   position: relative;
-//   width: 75%;
-//   height: 475px;
-//   .tiket_tit {
-//     transform: translateY(-70px);
-//     font-size: 80px;
-//     font-family: Libre Baskerville;
-//   }
-//   .tiket_txt_box {
-//     h2 {
-//       color: #333333;
-//       font-family: Roboto;
-//       font-size: 40px;
-//       margin-bottom: 10px;
-//     }
-//   }
-//   .tiket_txt_box {
-//     p {
-//       color: #333333;
-//       font-family: Libre Baskerville;
-//       font-size: 20px;
-//     }
-//   }
-//   .btn_more {
-//     display: flex;
-//     width: 180px;
-//     height: 50px;
-//     border: 1px solid #333333;
-//     margin-top: 120px;
-//     justify-content: center;
-//     align-items: center;
-//     font-family: Roboto;
-//     font-size: 20px;
-//   }
-// }
-// .slide-tiket {
-//   margin: -53px 0;
-//   .splide {
-//     max-width: 800px;
-//     margin: 0 auto;
-//     position: relative;
-//   }
-//   .splide__track {
-//     overflow: visible;
-//   }
-//   .splide__slide img {
-//     width: 100%;
-//     height: auto;
-//   }
-// }
 .item {
   background: #f7f7f7;
   // margin: 5rem 0rem;
@@ -258,6 +200,7 @@
       height: 100%;
       overflow: hidden;
       background-repeat: no-repeat;
+      border: 1px solid #333333;
     }
 
     img {
@@ -327,7 +270,7 @@
       }
       .paginator {
         position: absolute;
-        bottom: 20px;
+        bottom: 70px;
         left: 0;
         font-size: 14px;
         font-weight: 500;
