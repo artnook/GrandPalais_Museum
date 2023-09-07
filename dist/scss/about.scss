@@ -1,6 +1,6 @@
 .brand_top {
   h1 {
-    // filter: url("#distort");
+    filter: url("#distort");
     color: #333;
     text-align: center;
     font-family: Libre Baskerville;
@@ -29,6 +29,25 @@
     font-family: Libre Baskerville;
     font-size: 35px;
     font-style: normal;
+  }
+}
+#barnd_section2 {
+  .content_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15% 60% 0 0;
+  }
+  .ba-mgb-40 {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-family: Libre Baskerville;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 26px;
   }
 }
 #brand_scetion3 {
@@ -135,6 +154,16 @@
     display: grid;
     grid-column-gap: 6.6rem;
     margin-top: 100px;
+  }
+  .ba-mgb-40 {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-family: Libre Baskerville;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 26px;
   }
   .section-title {
     grid-column: 1/ 7;

@@ -1,13 +1,13 @@
-$(window).scroll(function () {
-  scroll();
-});
+// $(window).scroll(function () {
+//   scroll();
+// });
 
-scroll();
+// scroll();
 
-function scroll() {
-  var top = $("html, body").scrollTop();
-  var el = $("#distort").find("feDisplacementMap");
+// function scroll() {
+//   var top = $("html, body").scrollTop();
+//   var el = $("#distort").find("feDisplacementMap");
 
-  el.attr("scale", top);
-  $("h1").css("opacity", 1 - top * 0.007);
-}
+//   el.attr("scale", top);
+//   $("h1").css("opacity", 1 - top * 0.007);
+// }
