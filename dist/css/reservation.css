@@ -25,6 +25,22 @@
   overflow: hidden;
   font-size: 1.25rem;
 }
+.banniere .detail .layout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banniere .detail .area-btn a {
+  border: 2px solid #ffffff;
+  padding: 15px 65px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 25px;
+}
+.banniere .detail a:hover {
+  background: #000000;
+  transform: perspective(1px) translateZ(0);
+}
 .banniere .image {
   position: absolute;
   top: 0;

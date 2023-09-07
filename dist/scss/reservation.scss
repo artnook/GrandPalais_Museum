@@ -23,6 +23,22 @@
     z-index: 5;
     overflow: hidden;
     font-size: 1.25rem;
+    .layout-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .area-btn a {
+      border: 2px solid #ffffff;
+      padding: 15px 65px;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 25px;
+    }
+    a:hover {
+      background: #000000;
+      transform: perspective(1px) translateZ(0);
+    }
   }
   .image {
     position: absolute;
