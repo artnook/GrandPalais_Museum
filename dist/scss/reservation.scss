@@ -73,3 +73,60 @@
     padding-bottom: 70px;
   }
 }
+.reservtion {
+  .tab_detail {
+    text-align: center;
+    margin: 10% 0;
+  }
+  .tab_title {
+    color: #1388ff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 7% 0;
+  }
+  .title_wrapper {
+    p {
+      color: #333;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 20px;
+      width: 60%;
+      margin: 5% auto;
+    }
+  }
+  .table_wrapper {
+    margin: 10% 0;
+  }
+  .wysiwygarea {
+    strong {
+      color: #333;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 25px;
+    }
+    p {
+      color: #333;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 20px;
+    }
+  }
+  .tabel_account {
+    p {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      line-height: 320%;
+    }
+  }
+}
+.annexe {
+  .mecene {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 0;
+  }
+}

@@ -70,4 +70,53 @@
 }
 .banniere .detail.copy-on {
   padding-bottom: 70px;
+}
+
+.reservtion .tab_detail {
+  text-align: center;
+  margin: 10% 0;
+}
+.reservtion .tab_title {
+  color: #1388ff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 7% 0;
+}
+.reservtion .title_wrapper p {
+  color: #333;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  width: 60%;
+  margin: 5% auto;
+}
+.reservtion .table_wrapper {
+  margin: 10% 0;
+}
+.reservtion .wysiwygarea strong {
+  color: #333;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 25px;
+}
+.reservtion .wysiwygarea p {
+  color: #333;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+}
+.reservtion .tabel_account p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 320%;
+}
+
+.annexe .mecene {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 0;
 }/*# sourceMappingURL=reservation.css.map */
