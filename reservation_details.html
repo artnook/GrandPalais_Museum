@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서브타이틀 | 프로젝트 이름</title>
+    <meta
+      name="description"
+      content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
+    <link rel="stylesheet" href="./dist/css/reservation_details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="./dist/js/include.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
+    <script defer src="./dist/js/clock.js"></script>
+    <script defer src="./dist/js/slide.js"></script>
+    <script defer src="./dist/js/youtube.js"></script>
+  </head>
+  <body>
+    <div id="u-skip">
+      <a href="#gnb"><span>주요메뉴 바로가기</span></a>
+      <a href="#main"><span>컨텐츠 바로가기</span></a>
+    </div>
+    <div class="wrap">
+      <!-- logo 왼쪽 type -->
+      <header data-include-path="./outline/header.html"></header>
+
+      <main id="main">
+        <!-- section : 제목이 있는 그룹  -->
+        <!-- 배경이 100% 안에 내용이 margin이 있고 싶을 때 main의 container를 배꼬 원하는 부분을 .container로 싸준다.  -->
+        <section class="renew-wrap">
+          <div class="inner">
+            <div class="rn-01">
+              <img
+                src="./images/reservation_details/details_bnr.png"
+                alt="그랑팔레 배너"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="renew-wrap rw2">
+          <div class="inner">
+            <div class="rn-02">
+              <div class="rn-02-left">
+                <div class="rn-product-imgbox">
+                  <img
+                    src="./images/reservation_details/details_mucha.png"
+                    alt="무하 이미지"
+                  />
+                  <a href=""></a>
+                </div>
+              </div>
+              <div class="rn-02-right">
+                <div class="rn-product-area">
+                  <strong>영원한 무하 - 오픈 티켓</strong>
+                  <dl>
+                    <dt>장소</dt>
+                    <dd>아이젠하워 장군 거리 원스턴 처칠, 75008 파리 프랑스</dd>
+                    <dt>기간</dt>
+                    <dd>2023년 3월 22일 ~ 2023년 11월 5일</dd>
+                    <dt>관광 연령</dt>
+                    <dd>전체관람가</dd>
+                    <dt>가격</dt>
+                    <dd>입장권 - <span class="rn-blue">2,907,420</span>원</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="rn-product-area2">
+                <dl>
+                  <dt>공연시간 안내</dt>
+                  <dd>
+                    월,목 7시 30분 / 수,금 2시 30분, 7시 30분/ 토 2시, 7시/ 일
+                    3시 (화 전시 없음)
+                    <br />
+                    <br />
+                    *일부 좌석 및 회차는 단체 판매로 인해 사전 마감되었습니다.
+                    판매마감회차 : 11/4(토) 14:00
+                    <br />
+                  </dd>
+                  <dt>배송정보</dt>
+                  <dd>현장 수령만 가능</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="rn-03" id="divTimeTable">
+              <div class="rn-03-left on">
+                <div class="rn-03-left-tit">
+                  <p class="rn-04-left-xtit">날짜/시간 선택</p>
+                </div>
+                <div class="rn-04-left-wrap">
+                  <div class="rn-04-left-cal">
+                    <!--캘린더-->
+                    <div id="rncalendar" class="hasDatepicker">
+                      <div
+                        class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
+                        style="display: block"
+                      >
+                        <div
+                          class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"
+                        >
+                          <a
+                            class="ui-datepicker-prev ui-corner-all ui-state-disabled"
+                            title="이전 달"
+                            ><span class="ui-icon ui-icon-circle-triangle-w"
+                              >이전 달</span
+                            ></a
+                          ><a
+                            class="ui-datepicker-next ui-corner-all"
+                            data-handler="next"
+                            data-event="click"
+                            title="다음 달"
+                            ><span class="ui-icon ui-icon-circle-triangle-e"
+                              >다음 달</span
+                            ></a
+                          >
+                          <div class="ui-datepicker-title">
+                            <span class="ui-datepicker-year">2023</span
+                            >.&nbsp;<span class="ui-datepicker-month">09</span>
+                          </div>
+                        </div>
+                        <table class="ui-datepicker-calendar">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="ui-datepicker-week-end">
+                                <span title="일">일</span>
+                              </th>
+                              <th scope="col"><span title="월">월</span></th>
+                              <th scope="col"><span title="화">화</span></th>
+                              <th scope="col"><span title="수">수</span></th>
+                              <th scope="col"><span title="목">목</span></th>
+                              <th scope="col"><span title="금">금</span></th>
+                              <th scope="col" class="ui-datepicker-week-end">
+                                <span title="토">토</span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td
+                                class="ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">1</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span
+                                  class="ui-state-default"
+                                  style="color: rgb(237, 64, 55)"
+                                  >2</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span
+                                  class="ui-state-default"
+                                  style="color: rgb(237, 64, 55)"
+                                  >3</span
+                                >
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">4</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">5</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">6</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">7</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">8</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span
+                                  class="ui-state-default"
+                                  style="color: rgb(237, 64, 55)"
+                                  >9</span
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span
+                                  class="ui-state-default"
+                                  style="color: rgb(237, 64, 55)"
+                                  >10</span
+                                >
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">11</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled ui-datepicker-today"
+                              >
+                                <span class="ui-state-default">12</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">13</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-days-cell-over ui-datepicker-current-day"
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a
+                                  class="ui-state-default ui-state-active eveon"
+                                  href="#"
+                                  >14</a
+                                >
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >15</a
+                                >
+                              </td>
+                              <td
+                                class="ui-datepicker-week-end"
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >16</a
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="ui-datepicker-week-end"
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >17</a
+                                >
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">18</span>
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >19</a
+                                >
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >20</a
+                                >
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >21</a
+                                >
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >22</a
+                                >
+                              </td>
+                              <td
+                                class="ui-datepicker-week-end"
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >23</a
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                class="ui-datepicker-week-end"
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >24</a
+                                >
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">25</span>
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >26</a
+                                >
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >27</a
+                                >
+                              </td>
+                              <td
+                                class=" "
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >28</a
+                                >
+                              </td>
+                              <td
+                                class="ui-datepicker-unselectable ui-state-disabled"
+                              >
+                                <span class="ui-state-default">29</span>
+                              </td>
+                              <td
+                                class="ui-datepicker-week-end"
+                                data-handler="selectDay"
+                                data-event="click"
+                                data-month="8"
+                                data-year="2023"
+                              >
+                                <a class="ui-state-default eveon" href="#"
+                                  >30</a
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!--회차정보-->
+                  <div
+                    class="rn-04-left-calist scroll-color mCustomScrollbar _mCS_2 mCS_no_scrollbar"
+                    id="PerfPlayTime"
+                    style="height: 233px"
+                  >
+                    <a
+                      href="#"
+                      idtime="1235776"
+                      title="오후 7시 30분"
+                      onclick="jsf_pdi_ChangePlayTime('calendar','1235776','오후7시30분');"
+                      ><span>1회</span> 오후 7시 30분</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="rn-03-right off"></div>
+            </div>
+            <div class="rn-04">
+              <a href="">예매하기</a>
+            </div>
+            <div class="rn-05">
+              <a href="">
+                <span>상세정보</span>
+              </a>
+              <a href="">
+                <span>관람후기(0)</span>
+              </a>
+              <a href="">
+                <span>예매/취소안내</span>
+              </a>
+            </div>
+            <div class="rn-tab-boxes">
+              <div class="rb-tab-area rn-0-6 on">
+                <div class="rn-0801">
+                  <p class="rn08-tit">전시일정 정보</p>
+                  <div class="rn08-txt">
+                    <p>
+                      <span>[관람시간]</span>
+                      -30분 단위의 회차별로 입장합니다.
+                    </p>
+                    <p><br /></p>
+                    <p>
+                      <span>[관람 가능 시간]</span>
+                      -월요일 오후 12시부터 오후 7시까지.
+                      <br />-수요일~일요일 오전 10시 ~ 오후 7시 <br />-수요일 밤
+                      9시까지 야상곡 <br />-매주 화요일휴무 <br />-2023년 7월
+                      22일 임시 휴업
+                    </p>
+                    <p><br /></p>
+                    <p>
+                      <span>[셔틀 버스]</span>
+                      ACCESSGrand Palais Immersive - 110 rue de Lyon - 75012
+                      Paris Metro Bastille(1, 5, 8호선), Gare de Lyon(RER),
+                      버스: 20, 29, 65, 69, 76, 86, 87, 91
+                    </p>
+                  </div>
+                </div>
+                <div class="rn-0802">
+                  <p>
+                    <img src="./images/reservation_details/0802.png" alt="" />
+                  </p>
+                </div>
+                <div class="rn-0803">
+                  <div class="rn-03-title">
+                    <p>ETERNEL <br />MUCHA</p>
+                  </div>
+                  <div class="rn-03-img">
+                    <p>
+                      <img src="./images/reservation_details/0803.png" alt="" />
+                    </p>
+                  </div>
+                </div>
+                <div class="rn-0804">
+                  <div class="rn-04-title">
+                    <p>관람 포인트</p>
+                  </div>
+                  <div class="rn-04-img">
+                    <img src="./images/reservation_details/0804.png" alt="" />
+                    <p>
+                      Les Saisons, 1896, panneau décoratif, lithographie en
+                      couleur, 100,3 x 54 cm
+                    </p>
+                  </div>
+                </div>
+                <div class="rn-0805">
+                  <div class="rn-05-title">
+                    <p>Alphonse Maria Mucha <br />Exhibition</p>
+                  </div>
+                  <div class="rn-05-img">
+                    <img src="./images/reservation_details/0805.png" alt="" />
+                    <p>Lorenzaccio, 1896, color lithography,203.7 x 76 cm</p>
+                  </div>
+                </div>
+                <div class="rn-0806">
+                  <div class="rn-05-2-img">
+                    <img src="./images/reservation_details/0806.png" alt="" />
+                    <p>
+                      Affiche pour le papier à cigarette Job, 1896, lithographie
+                      en couleur, 66,7 x 46,4 cm
+                    </p>
+                  </div>
+                </div>
+                <div class="rn-0807">
+                  <div class="rn-05-3-img">
+                    <img src="./images/reservation_details/0807.png" alt="" />
+                    <p>
+                      The Abolition of Servage in Russia: Work in Freedom is the
+                      Foundation of a State (1861), The Slavic Epistle, 1914,egg
+                      tempera and oil on canvas, 610 x 810 cm, Prague, National
+                      Gallery
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer data-include-path="./outline/footer.html"></footer>
+    </div>
+  </body>
+</html>

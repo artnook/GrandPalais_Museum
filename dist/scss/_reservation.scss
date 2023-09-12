@@ -63,7 +63,7 @@
     .manifestation-place {
       color: #fff;
       font-family: Roboto;
-      font-size: 25px;
+      font-size: 21px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -82,7 +82,7 @@
     color: #1388ff;
     text-align: center;
     font-family: Roboto;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     margin: 7% 0;
   }
@@ -91,9 +91,12 @@
       color: #333;
       text-align: center;
       font-family: Roboto;
-      font-size: 20px;
+      font-size: 16px;
       width: 60%;
       margin: 5% auto;
+    }
+    img {
+      max-width: 30%;
     }
   }
   .table_wrapper {
@@ -104,13 +107,13 @@
       color: #333;
       text-align: center;
       font-family: Roboto;
-      font-size: 25px;
+      font-size: 21px;
     }
     p {
       color: #333;
       text-align: center;
       font-family: Roboto;
-      font-size: 20px;
+      font-size: 16px;
     }
   }
   .tabel_account {
@@ -121,6 +124,11 @@
       line-height: 320%;
     }
   }
+  .table_wrapper {
+    img {
+      max-width: 20%;
+    }
+  }
 }
 .annexe {
   .mecene {
@@ -128,5 +136,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 10% 0;
+    a {
+      img {
+        max-width: 85%;
+      }
+    }
   }
 }

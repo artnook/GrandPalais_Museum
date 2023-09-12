@@ -26,7 +26,7 @@
   color: #fff;
   text-align: center;
   font-family: Libre Baskerville;
-  font-size: 35px;
+  font-size: 31px;
   font-style: normal;
 }
 
@@ -42,7 +42,7 @@
   flex-direction: column;
   color: #333;
   font-family: Libre Baskerville;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: normal;
   padding-bottom: 26px;
@@ -79,7 +79,7 @@
   flex-direction: column;
   color: #333;
   font-family: Libre Baskerville;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: normal;
   padding-bottom: 26px;
@@ -148,7 +148,7 @@
   flex-direction: column;
   color: #333;
   font-family: Libre Baskerville;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: normal;
   padding-bottom: 26px;
@@ -158,7 +158,7 @@
   width: 100%;
   color: #333;
   font-family: Libre Baskerville;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -183,4 +183,4 @@
   font-family: Libre Baskerville;
   font-size: 50px;
   font-style: normal;
-}/*# sourceMappingURL=about.css.map */
+} /*# sourceMappingURL=about.css.map */

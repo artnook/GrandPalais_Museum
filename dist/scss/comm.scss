@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents", "someone",
-  "reservation";
+@import "variables", "mixin", "fonts", "reset";
 
 // comm.scss(css) -
 // 공통요소 : header, footer, button, icon, box
@@ -299,3 +298,5 @@
     border-top: 10px solid $gray-e;
   }
 }
+
+@import "about", "reservation", "main", "contents", "reservation_details";

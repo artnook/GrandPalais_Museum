@@ -51,21 +51,21 @@
     content: "";
     width: 100%;
     max-width: 1133px;
-    height: 425px;
+    height: 400px;
     background-color: #000;
     opacity: 0.03;
     position: absolute;
     right: -340px;
-    top: -87px;
+    top: -50px;
   }
   .contetnt_area {
     &::before {
       content: "Museum";
-      font-size: 200px;
+      font-size: 150px;
       letter-spacing: -14px;
       position: absolute;
       right: 0px;
-      bottom: -240px;
+      bottom: -180px;
       font-family: Libre Baskerville;
     }
   }
@@ -73,7 +73,7 @@
     display: flex;
     justify-content: space-between;
     // width: 1192px;
-    height: 425px;
+    height: 400px;
     background: #000;
     margin: 317px auto;
     box-shadow: 5px 5px 3px grey;
@@ -153,6 +153,7 @@
 }
 .item {
   background: #f7f7f7;
+  height: 530px;
   // margin: 5rem 0rem;
   .inner {
     display: flex;
