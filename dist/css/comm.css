@@ -24,7 +24,10 @@
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 /* reset */
 body,
@@ -118,15 +121,15 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text],
-input[type=password],
-input[type=submit],
-input[type=search] {
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0;
 }
 
-input:checked[type=checkbox] {
+input:checked[type="checkbox"] {
   background-color: #666;
   -webkit-appearance: checkbox;
 }
@@ -136,15 +139,15 @@ button {
   border-radius: 0;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset],
-input[type=file] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"] {
   -webkit-appearance: button;
   border-radius: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -152,16 +155,16 @@ input[type=search]::-webkit-search-cancel-button {
 /* mobile */
 body {
   background: #fff;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.5;
-  font-family: "Libre Baskerville", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
   color: #222;
 }
 
 /* desktop */
 @media screen and (min-width: 1280px) {
   body {
-    font-size: 16px;
+    font-size: 1.143em;
   }
 }
 /* color값은 디자인가이드에 맞게사용 */
@@ -190,7 +193,7 @@ hr {
   display: none;
 }
 
-input[type=password] {
+input[type="password"] {
   font-family: "Malgun Gothic";
 }
 
@@ -355,6 +358,7 @@ legend {
   border: 1px solid #333;
   justify-content: center;
   align-items: center;
+  font-family: Roboto;
   font-size: 18px;
 }
 .btn_line.white {
@@ -379,7 +383,7 @@ legend {
   background: rgba(255, 255, 255, 0);
 }
 #header .inner {
-  max-width: 1280px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -527,9 +531,9 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
   transition: transform 0.3s;
 }
 .section-shopping .lst-thumb-two-column a:hover img {
@@ -875,11 +879,12 @@ legend {
   overflow: hidden;
 }
 .slide-intro .splide {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
-.slide-intro .splide::before, .slide-intro .splide::after {
+.slide-intro .splide::before,
+.slide-intro .splide::after {
   content: "";
   position: absolute;
   top: 0;
@@ -935,6 +940,7 @@ legend {
 .exb-museum .contetnt_area::before {
   content: "Museum";
   font-size: 150px;
+  letter-spacing: -1em;
   position: absolute;
   right: 0px;
   bottom: -180px;
@@ -1008,7 +1014,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .exb-museum .content_museum {
   max-width: 1920px;
@@ -1030,8 +1036,8 @@ legend {
 .item::before {
   content: "Reservation";
   position: absolute;
-  top: 2100px;
-  left: 300px;
+  top: 2109px;
+  left: 230px;
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
@@ -1264,7 +1270,7 @@ legend {
   left: 50%;
   top: 50%;
   z-index: 1;
-  transform: translate(-50%, -50%) scale(2);
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .box-clock #svg-group-minute {
@@ -1344,32 +1350,33 @@ legend {
   margin: 65px 0;
 }
 .rw2 .rn-02 {
-  display: flex;
-  justify-content: space-between;
   margin-top: 10px;
   overflow: hidden;
   padding-bottom: 50px;
   position: relative;
 }
 .rw2 .rn-02-left {
-  width: 35%;
+  float: left;
+  width: 430px;
 }
 .rw2 .rn-02-left img {
   display: block;
   width: 100%;
 }
 .rw2 .rn-02-right {
-  width: 60%;
+  float: right;
+  width: 800px;
+  margin: 20px 0;
 }
 .rw2 .rn-product-area {
   border-bottom: 1px solid #000;
-  padding-bottom: 50px;
 }
 .rw2 .rn-product-area strong {
   color: #1388ff;
   text-align: center;
   font-family: Roboto;
   font-size: 27px;
+  line-height: 100px;
 }
 .rw2 .rn-product-area dt {
   color: #333;
@@ -1493,7 +1500,7 @@ legend {
   font-size: 36px;
   font-weight: 700;
 }
-.rw2 .rn08-txt dl {
+.rw2 .rn08-txt p {
   display: flex;
   flex-direction: column;
   color: #333;
@@ -1517,7 +1524,7 @@ legend {
 .rw2 .rn-03-title p {
   position: absolute;
   top: -100px;
-  left: 115px;
+  left: 533px;
 }
 .rw2 .rn-03-img img {
   width: 600px;
@@ -1534,14 +1541,12 @@ legend {
 }
 .rw2 .rn-04-img {
   margin-bottom: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .rw2 .rn-04-img p {
   text-align: center;
   color: #333;
   text-align: center;
+  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
@@ -1549,6 +1554,7 @@ legend {
 .rw2 .rn-05-title {
   color: #333;
   text-align: center;
+  font-family: Libre Baskerville;
   font-size: 50px;
   line-height: normal;
   position: absolute;
@@ -1568,6 +1574,7 @@ legend {
   text-align: center;
   color: #333;
   text-align: center;
+  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
@@ -1583,6 +1590,7 @@ legend {
   text-align: center;
   color: #333;
   text-align: center;
+  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
@@ -1597,19 +1605,29 @@ legend {
   text-align: center;
   color: #333;
   text-align: center;
+  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
 }
 .rw2 .rn-product-area2 {
-  line-height: 40px;
-  margin-top: 40px;
+  bborder-bottom: 1px solid #000;
+  float: right;
+  width: 800px;
 }
 .rw2 .rn-product-area2 dt {
   color: #333;
+  text-align: center;
+  font-family: Roboto;
   font-size: 1em;
   font-weight: bold;
+  float: left;
 }
 .rw2 .rn-product-area2 dd {
+  display: flex;
+  color: #333;
+  font-family: Roboto;
   font-size: 1em;
-}/*# sourceMappingURL=comm.css.map */
+  flex-direction: column;
+  margin: 15px 140px;
+} /*# sourceMappingURL=comm.css.map */
