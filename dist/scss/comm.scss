@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 .inner {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 // .container {
@@ -63,7 +63,6 @@
   border: 1px solid #333;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
   font-size: 18px;
   &.white {
     border: 1px solid $w;
@@ -75,7 +74,7 @@
     margin-bottom: -2px;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    font-size: 14px;
+    font-size: 1em;
   }
 }
 
@@ -90,7 +89,7 @@
   border-bottom: 1px solid $b;
   background: rgba($w, 0);
   .inner {
-    max-width: 1440px;
+    max-width: 1280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -282,7 +281,7 @@
       .txt-shopping__tit {
         display: block;
         margin-bottom: 5px;
-        font-size: 14px;
+        font-size: 1em;
         color: $titDefault;
       }
       .txt-shopping__desc {

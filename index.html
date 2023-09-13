@@ -84,6 +84,7 @@
     <script defer src="./dist/js/app.js"></script>
     <script defer src="./dist/js/comm.js"></script>
     <script defer src="./dist/js/clock.js"></script>
+    <script defer src="./dist/js/clock2.js"></script>
     <script defer src="./dist/js/slide.js"></script>
   </head>
   <body>
@@ -225,123 +226,47 @@
                 </p>
               </div>
               <div class="box-clock">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="1924"
-                  height="2248"
-                  viewBox="0 0 1924 2248"
-                >
-                  <defs>
-                    <style>
-                      .cls-1,
-                      .cls-2 {
-                        fill: #333;
-                        stroke: #333;
-                      }
+                <svg id="clock" width="300" height="300" viewBox="0 0 500 500">
+                  <g class="clock-face">
+                    <rect
+                      id="hour"
+                      class="hand hour-hand"
+                      x="244.5"
+                      y="140"
+                      width="10"
+                      height="110"
+                      rx="3.5"
+                      ry="3.5"
+                    />
 
-                      .cls-1 {
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-width: 16px;
-                        fill-rule: evenodd;
-                      }
+                    <rect
+                      id="minute"
+                      class="hand min-hand"
+                      x="244.5"
+                      y="1"
+                      width="10"
+                      height="250"
+                      rx="3.5"
+                      ry="3.5"
+                    />
 
-                      .cls-2 {
-                        stroke-width: 1px;
-                        filter: url(#filter);
-                      }
-                    </style>
-                    <filter
-                      id="filter"
-                      x="834"
-                      y="1015"
-                      width="257"
-                      height="257"
-                      filterUnits="userSpaceOnUse"
-                    >
-                      <feOffset result="offset" dy="19" in="SourceAlpha" />
-                      <feGaussianBlur result="blur" stdDeviation="8.718" />
-                      <feFlood result="flood" flood-opacity="0.4" />
-                      <feComposite
-                        result="composite"
-                        operator="in"
-                        in2="blur"
-                      />
-                      <feBlend result="blend" in="SourceGraphic" />
-                    </filter>
-                  </defs>
-                  <style>
-                    #svg-clock-minute,
-                    #svg-clock-hour,
-                    #svg-clock-second {
-                      transform-origin: 50%;
-                      transform: rotate(0);
-                    }
-                    #svg-group-minute,
-                    #svg-group-hour,
-                    #svg-group-second {
-                      transform-origin: 50%;
-                      animation-name: rotate;
-                      animation-iteration-count: infinite;
-                      transform: rotate(0);
-                    }
-                    #svg-group-minute {
-                      animation-duration: 3600s;
-                      animation-timing-function: linear;
-                    }
-                    #svg-group-hour {
-                      animation-duration: 43200s;
-                      animation-timing-function: linear;
-                    }
-                    #svg-group-second {
-                      animation-duration: 60s;
-                      animation-timing-function: steps(60, end);
-                    }
-                    @keyframes rotate {
-                      0% {
-                        transfrom: rotate(0deg);
-                      }
-                      to {
-                        transform: rotate(360deg);
-                      }
-                    }
-                  </style>
-                  <image
-                    id="svg-group-minute"
-                    x="956"
-                    y="259"
-                    width="12"
-                    height="865"
-                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAANhCAYAAADT91r+AAAAoklEQVR4nO3LsQEAIAzDsMBL/f82uKFz5Nk6M/Oy6G7mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgHAAAAAAAAAAAAVSDJBx60CFqSY0MZAAAAAElFTkSuQmCC"
-                  />
-                  <path
-                    id="svg-group-hour"
-                    class="cls-1"
-                    d="M961.891,1123.95l588.219,422.1Z"
-                  />
-                  <image
-                    id="svg-group-second"
-                    x="959"
-                    y="205"
-                    width="6"
-                    height="1130"
-                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAARqCAYAAABrtQR6AAAAbUlEQVR4nO3JMQEAIAzEwAcLmMZ1MdCRrZcxt86tStPuZgAAAAAAAAAAAAAAAAAAAMYDAAAAAAAAAAAAAAAAgPEAAAAAAAAAAAAAAAAAYDwAAAAAAAAAAAAAAAAAGA8AAAAAAAAAAAAAAPyHJA9UpgttIjFsdwAAAABJRU5ErkJggg=="
-                  />
-                  <g style="fill: #333; filter: url(#filter)">
+                    <rect
+                      id="seconds"
+                      class="hand second-hand"
+                      x="248"
+                      y="70"
+                      width="4.5"
+                      height="180"
+                    />
+
                     <circle
-                      id="circle"
-                      class="cls-2"
-                      cx="962"
-                      cy="1124"
-                      r="50"
-                      style="stroke: inherit; filter: none; fill: inherit"
+                      id="middle"
+                      class="hand center"
+                      cx="250"
+                      cy="250"
+                      r="18"
                     />
                   </g>
-                  <use
-                    xlink:href="#circle"
-                    style="stroke: #333; filter: none; fill: none"
-                  />
                 </svg>
               </div>
             </div>

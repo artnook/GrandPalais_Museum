@@ -9,34 +9,37 @@
     margin: 65px 0;
   }
   .rn-02 {
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
     overflow: hidden;
     padding-bottom: 50px;
     position: relative;
   }
   .rn-02-left {
-    float: left;
-    width: 430px;
+    width: 35%;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
   .rn-02-right {
-    float: right;
-    width: 800px;
-    margin: 20px 0;
+    width: 60%;
   }
   .rn-product-area {
     border-bottom: 1px solid #000;
+    padding-bottom: 50px;
     strong {
       color: #1388ff;
       text-align: center;
       font-family: Roboto;
       font-size: 27px;
-      line-height: 100px;
     }
     dt {
       color: #333;
       text-align: center;
       font-family: Roboto;
-      font-size: 14px;
+      font-size: 1.143em;
       line-height: 50px;
       font-weight: bold;
       float: left;
@@ -46,7 +49,7 @@
       color: #333;
       text-align: center;
       font-family: Roboto;
-      font-size: 14px;
+      font-size: 1.143em;
       line-height: 50px;
       margin: 0px 140px;
     }
@@ -126,28 +129,32 @@
     vertical-align: top;
   }
   .rn-05 {
+    display: flex;
     border-bottom: 2px solid #333;
     font-size: 0;
+    .on {
+      a {
+        border-top: 3px solid #1388ff;
+      }
+    }
+    a {
+      display: block;
+      height: 55px;
+      line-height: 55px;
+      width: 180px;
+      border-top: 3px solid #fff;
+      text-align: center;
+      > span {
+        color: #333333;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        letter-spacing: -0.09em;
+        font-weight: bold;
+      }
+    }
   }
-  .rn-05 a {
-    display: inline-block;
-    height: 55px;
-    line-height: 55px;
-    width: 180px;
-    border-top: 3px solid #fff;
-    text-align: center;
-  }
-  .rn-05 a:hover {
-    border-top: 3px solid #1388ff;
-  }
-  .rn-05 a > span {
-    color: #333333;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 18px;
-    letter-spacing: -0.09em;
-    font-weight: bold;
-  }
+
   .rn08-tit {
     display: flex;
     justify-content: center;
@@ -157,7 +164,7 @@
     font-weight: 700;
   }
   .rn08-txt {
-    p {
+    dl {
       display: flex;
       flex-direction: column;
       color: #333;
@@ -181,7 +188,7 @@
     p {
       position: absolute;
       top: -100px;
-      left: 533px;
+      left: 115px;
     }
   }
   .rn-03-img {
@@ -201,11 +208,13 @@
   }
   .rn-04-img {
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     p {
       text-align: center;
       color: #333;
       text-align: center;
-      font-family: Roboto;
       font-size: 20px;
       line-height: normal;
       margin-top: 10px;
@@ -214,7 +223,6 @@
   .rn-05-title {
     color: #333;
     text-align: center;
-    font-family: Libre Baskerville;
     font-size: 50px;
     line-height: normal;
     position: absolute;
@@ -233,7 +241,6 @@
       text-align: center;
       color: #333;
       text-align: center;
-      font-family: Roboto;
       font-size: 20px;
       line-height: normal;
       margin-top: 10px;
@@ -249,7 +256,6 @@
       text-align: center;
       color: #333;
       text-align: center;
-      font-family: Roboto;
       font-size: 20px;
       line-height: normal;
       margin-top: 10px;
@@ -264,31 +270,22 @@
       text-align: center;
       color: #333;
       text-align: center;
-      font-family: Roboto;
       font-size: 20px;
       line-height: normal;
       margin-top: 10px;
     }
   }
   .rn-product-area2 {
-    bborder-bottom: 1px solid #000;
-    float: right;
-    width: 800px;
+    line-height: 40px;
+    margin-top: 40px;
+
     dt {
       color: #333;
-      text-align: center;
-      font-family: Roboto;
-      font-size: 14px;
+      font-size: 1em;
       font-weight: bold;
-      float: left;
     }
     dd {
-      display: flex;
-      color: #333;
-      font-family: Roboto;
-      font-size: 14px;
-      flex-direction: column;
-      margin: 15px 140px;
+      font-size: 1em;
     }
   }
 }

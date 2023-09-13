@@ -154,7 +154,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Libre Baskerville", "Malgun Gothic", "맑은 고딕", sans-serif;
   color: #222;
 }
 
@@ -308,7 +308,7 @@ legend {
 }
 
 .inner {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -355,7 +355,6 @@ legend {
   border: 1px solid #333;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
   font-size: 18px;
 }
 .btn_line.white {
@@ -368,7 +367,7 @@ legend {
   margin-bottom: -2px;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 #header {
@@ -380,7 +379,7 @@ legend {
   background: rgba(255, 255, 255, 0);
 }
 #header .inner {
-  max-width: 1440px;
+  max-width: 1280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -542,7 +541,7 @@ legend {
 .section-shopping .lst-thumb-two-column .txt-shopping .txt-shopping__tit {
   display: block;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 1em;
   color: #101010;
 }
 .section-shopping .lst-thumb-two-column .txt-shopping .txt-shopping__desc {
@@ -641,7 +640,7 @@ legend {
 #brand_scetion3 .ba-body {
   color: #888;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 500;
   line-height: normal;
 }
@@ -830,7 +829,7 @@ legend {
   color: #333;
   text-align: center;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.143em;
   width: 60%;
   margin: 5% auto;
 }
@@ -850,7 +849,7 @@ legend {
   color: #333;
   text-align: center;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.143em;
 }
 .reservtion .tabel_account p {
   display: flex;
@@ -876,7 +875,7 @@ legend {
   overflow: hidden;
 }
 .slide-intro .splide {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   position: relative;
 }
@@ -936,7 +935,6 @@ legend {
 .exb-museum .contetnt_area::before {
   content: "Museum";
   font-size: 150px;
-  letter-spacing: -14px;
   position: absolute;
   right: 0px;
   bottom: -180px;
@@ -960,7 +958,7 @@ legend {
   color: #fff;
   text-align: center;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.143em;
   display: flex;
 }
 .exb-museum .exb-box .nav-box {
@@ -1032,8 +1030,8 @@ legend {
 .item::before {
   content: "Reservation";
   position: absolute;
-  top: 2109px;
-  left: 230px;
+  top: 2100px;
+  left: 300px;
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
@@ -1129,7 +1127,7 @@ legend {
   position: absolute;
   bottom: 70px;
   left: 0;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 500;
   cursor: pointer;
 }
@@ -1140,6 +1138,7 @@ legend {
 }
 
 .area3 {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -1163,13 +1162,18 @@ legend {
   letter-spacing: -0.01em;
   margin-bottom: 2rem;
   font-size: 18rem;
-  line-height: 16rem;
+  line-height: 1rem;
+}
+.area3 .box-image img {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
 }
 .area3 .text-head .text1 {
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
-  font-size: 160px;
+  font-size: 110px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1178,7 +1182,7 @@ legend {
   color: #1388ff;
   text-align: center;
   font-family: Roboto;
-  font-size: 160px;
+  font-size: 90px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1187,18 +1191,18 @@ legend {
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 800px;
+  margin-bottom: 660px;
 }
 .area3 .box-text .text-date {
   letter-spacing: -0.01em;
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
-  font-size: 160px;
+  font-size: 110px;
   line-height: normal;
 }
 .area3 .clock {
@@ -1212,11 +1216,25 @@ legend {
   bottom: 0;
   position: absolute;
 }
+.area3 svg {
+  display: block;
+  height: 75%;
+  width: 100%;
+}
+.area3 .hand {
+  fill: #121212;
+  top: 50%;
+  border-radius: 4px;
+  transform-origin: 50%;
+}
+.area3 .hand.second-hand {
+  fill: red;
+}
 .area3 #display {
   color: #333333;
   text-align: center;
   font-family: Roboto;
-  font-size: 160px;
+  font-size: 110px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1234,19 +1252,19 @@ legend {
   color: #333;
   text-align: center;
   font-family: Libre Baskerville;
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   position: absolute;
-  bottom: 80px;
+  bottom: 50px;
 }
 .area3 .box-clock {
-  margin-left: -59rem;
   position: absolute;
   left: 50%;
-  top: -10%;
+  top: 50%;
   z-index: 1;
+  transform: translate(-50%, -50%) scale(2);
 }
 
 .box-clock #svg-group-minute {
@@ -1326,35 +1344,38 @@ legend {
   margin: 65px 0;
 }
 .rw2 .rn-02 {
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
   overflow: hidden;
   padding-bottom: 50px;
   position: relative;
 }
 .rw2 .rn-02-left {
-  float: left;
-  width: 430px;
+  width: 35%;
+}
+.rw2 .rn-02-left img {
+  display: block;
+  width: 100%;
 }
 .rw2 .rn-02-right {
-  float: right;
-  width: 800px;
-  margin: 20px 0;
+  width: 60%;
 }
 .rw2 .rn-product-area {
   border-bottom: 1px solid #000;
+  padding-bottom: 50px;
 }
 .rw2 .rn-product-area strong {
   color: #1388ff;
   text-align: center;
   font-family: Roboto;
   font-size: 27px;
-  line-height: 100px;
 }
 .rw2 .rn-product-area dt {
   color: #333;
   text-align: center;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1.143em;
   line-height: 50px;
   font-weight: bold;
   float: left;
@@ -1364,7 +1385,7 @@ legend {
   color: #333;
   text-align: center;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1.143em;
   line-height: 50px;
   margin: 0px 140px;
 }
@@ -1441,19 +1462,20 @@ legend {
   vertical-align: top;
 }
 .rw2 .rn-05 {
+  display: flex;
   border-bottom: 2px solid #333;
   font-size: 0;
 }
+.rw2 .rn-05 .on a {
+  border-top: 3px solid #1388ff;
+}
 .rw2 .rn-05 a {
-  display: inline-block;
+  display: block;
   height: 55px;
   line-height: 55px;
   width: 180px;
   border-top: 3px solid #fff;
   text-align: center;
-}
-.rw2 .rn-05 a:hover {
-  border-top: 3px solid #1388ff;
 }
 .rw2 .rn-05 a > span {
   color: #333333;
@@ -1471,7 +1493,7 @@ legend {
   font-size: 36px;
   font-weight: 700;
 }
-.rw2 .rn08-txt p {
+.rw2 .rn08-txt dl {
   display: flex;
   flex-direction: column;
   color: #333;
@@ -1495,7 +1517,7 @@ legend {
 .rw2 .rn-03-title p {
   position: absolute;
   top: -100px;
-  left: 533px;
+  left: 115px;
 }
 .rw2 .rn-03-img img {
   width: 600px;
@@ -1512,12 +1534,14 @@ legend {
 }
 .rw2 .rn-04-img {
   margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .rw2 .rn-04-img p {
   text-align: center;
   color: #333;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
@@ -1525,7 +1549,6 @@ legend {
 .rw2 .rn-05-title {
   color: #333;
   text-align: center;
-  font-family: Libre Baskerville;
   font-size: 50px;
   line-height: normal;
   position: absolute;
@@ -1545,7 +1568,6 @@ legend {
   text-align: center;
   color: #333;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
@@ -1561,7 +1583,6 @@ legend {
   text-align: center;
   color: #333;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
@@ -1576,29 +1597,19 @@ legend {
   text-align: center;
   color: #333;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
 }
 .rw2 .rn-product-area2 {
-  bborder-bottom: 1px solid #000;
-  float: right;
-  width: 800px;
+  line-height: 40px;
+  margin-top: 40px;
 }
 .rw2 .rn-product-area2 dt {
   color: #333;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: bold;
-  float: left;
 }
 .rw2 .rn-product-area2 dd {
-  display: flex;
-  color: #333;
-  font-family: Roboto;
-  font-size: 14px;
-  flex-direction: column;
-  margin: 15px 140px;
+  font-size: 1em;
 }/*# sourceMappingURL=comm.css.map */

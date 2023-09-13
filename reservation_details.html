@@ -48,21 +48,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./dist/css/comm.css" />
-    <link rel="stylesheet" href="./dist/css/reservation_details.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="./dist/js/include.js"></script>
-    <script defer src="./dist/js/comm.js"></script>
     <script defer src="./dist/js/clock.js"></script>
     <script defer src="./dist/js/slide.js"></script>
     <script defer src="./dist/js/youtube.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
     <div id="u-skip">
@@ -95,7 +94,6 @@
                     src="./images/reservation_details/details_mucha.png"
                     alt="무하 이미지"
                   />
-                  <a href=""></a>
                 </div>
               </div>
               <div class="rn-02-right">
@@ -112,22 +110,21 @@
                     <dd>입장권 - <span class="rn-blue">2,907,420</span>원</dd>
                   </dl>
                 </div>
-              </div>
-              <div class="rn-product-area2">
-                <dl>
-                  <dt>공연시간 안내</dt>
-                  <dd>
-                    월,목 7시 30분 / 수,금 2시 30분, 7시 30분/ 토 2시, 7시/ 일
-                    3시 (화 전시 없음)
-                    <br />
-                    <br />
-                    *일부 좌석 및 회차는 단체 판매로 인해 사전 마감되었습니다.
-                    판매마감회차 : 11/4(토) 14:00
-                    <br />
-                  </dd>
-                  <dt>배송정보</dt>
-                  <dd>현장 수령만 가능</dd>
-                </dl>
+                <div class="rn-product-area2">
+                  <dl>
+                    <dt>공연시간 안내</dt>
+                    <dd>
+                      월,목 7시 30분 / 수,금 2시 30분, 7시 30분/ 토 2시, 7시/ 일
+                      3시 (화 전시 없음)
+                    </dd>
+                    <dd>
+                      *일부 좌석 및 회차는 단체 판매로 인해 사전 마감되었습니다.
+                      판매마감회차 : 11/4(토) 14:00
+                    </dd>
+                    <dt>배송정보</dt>
+                    <dd>현장 수령만 가능</dd>
+                  </dl>
+                </div>
               </div>
             </div>
             <div class="rn-03" id="divTimeTable">
@@ -494,43 +491,51 @@
               <div class="rn-03-right off"></div>
             </div>
             <div class="rn-04">
-              <a href="">예매하기</a>
+              <a href="#">예매하기</a>
             </div>
-            <div class="rn-05">
-              <a href="">
-                <span>상세정보</span>
-              </a>
-              <a href="">
-                <span>관람후기(0)</span>
-              </a>
-              <a href="">
-                <span>예매/취소안내</span>
-              </a>
-            </div>
+            <ul class="rn-05">
+              <li class="on">
+                <a href="#">
+                  <span>상세정보</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>관람후기(0)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>예매/취소안내</span>
+                </a>
+              </li>
+            </ul>
             <div class="rn-tab-boxes">
               <div class="rb-tab-area rn-0-6 on">
                 <div class="rn-0801">
                   <p class="rn08-tit">전시일정 정보</p>
                   <div class="rn08-txt">
-                    <p>
-                      <span>[관람시간]</span>
-                      -30분 단위의 회차별로 입장합니다.
-                    </p>
-                    <p><br /></p>
-                    <p>
-                      <span>[관람 가능 시간]</span>
-                      -월요일 오후 12시부터 오후 7시까지.
-                      <br />-수요일~일요일 오전 10시 ~ 오후 7시 <br />-수요일 밤
-                      9시까지 야상곡 <br />-매주 화요일휴무 <br />-2023년 7월
-                      22일 임시 휴업
-                    </p>
-                    <p><br /></p>
-                    <p>
-                      <span>[셔틀 버스]</span>
-                      ACCESSGrand Palais Immersive - 110 rue de Lyon - 75012
-                      Paris Metro Bastille(1, 5, 8호선), Gare de Lyon(RER),
-                      버스: 20, 29, 65, 69, 76, 86, 87, 91
-                    </p>
+                    <dl>
+                      <dt>[관람시간]</dt>
+                      <dd>-30분 단위의 회차별로 입장합니다.</dd>
+                    </dl>
+                    <dl>
+                      <dt>[관람 가능 시간]</dt>
+                      <dd>
+                        -월요일 오후 12시부터 오후 7시까지.
+                        <br />-수요일~일요일 오전 10시 ~ 오후 7시 <br />-수요일
+                        밤 9시까지 야상곡 <br />-매주 화요일휴무 <br />-2023년
+                        7월 22일 임시 휴업
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>[셔틀 버스]</dt>
+                      <dd>
+                        ACCESSGrand Palais Immersive - 110 rue de Lyon - 75012
+                        Paris Metro Bastille(1, 5, 8호선), Gare de Lyon(RER),
+                        버스: 20, 29, 65, 69, 76, 86, 87, 91
+                      </dd>
+                    </dl>
                   </div>
                 </div>
                 <div class="rn-0802">

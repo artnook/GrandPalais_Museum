@@ -1,7 +1,7 @@
 .slide-intro {
   overflow: hidden;
   .splide {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     position: relative;
     // 양쪽 필터
@@ -62,7 +62,6 @@
     &::before {
       content: "Museum";
       font-size: 150px;
-      letter-spacing: -14px;
       position: absolute;
       right: 0px;
       bottom: -180px;
@@ -86,7 +85,7 @@
         color: $w;
         text-align: center;
         font-family: Roboto;
-        font-size: 16px;
+        font-size: 1.143em;
         display: flex;
       }
     }
@@ -162,8 +161,8 @@
   &::before {
     content: "Reservation";
     position: absolute;
-    top: 2109px;
-    left: 230px;
+    top: 2100px;
+    left: 300px;
     color: #333;
     text-align: center;
     font-family: Libre Baskerville;
@@ -273,7 +272,7 @@
         position: absolute;
         bottom: 70px;
         left: 0;
-        font-size: 14px;
+        font-size: 1em;
         font-weight: 500;
         cursor: pointer;
       }
@@ -286,6 +285,7 @@
   position: relative;
 }
 .area3 {
+  position: relative;
   width: 100%;
   overflow: hidden;
   .wrapper {
@@ -308,13 +308,20 @@
     letter-spacing: -0.01em;
     margin-bottom: 2rem;
     font-size: 18rem;
-    line-height: 16rem;
+    line-height: 1rem;
+  }
+  .box-image {
+    img {
+      display: flex;
+      margin: 0 auto;
+      width: 75%;
+    }
   }
   .text-head .text1 {
     color: #333;
     text-align: center;
     font-family: Libre Baskerville;
-    font-size: 160px;
+    font-size: 110px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -323,7 +330,7 @@
     color: #1388ff;
     text-align: center;
     font-family: Roboto;
-    font-size: 160px;
+    font-size: 90px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -332,18 +339,18 @@
     color: #333;
     text-align: center;
     font-family: Libre Baskerville;
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 800px;
+    margin-bottom: 660px;
   }
   .box-text .text-date {
     letter-spacing: -0.01em;
     color: #333;
     text-align: center;
     font-family: Libre Baskerville;
-    font-size: 160px;
+    font-size: 110px;
     line-height: normal;
   }
 
@@ -358,12 +365,27 @@
     bottom: 0;
     position: absolute;
   }
+  svg {
+    display: block;
+    height: 75%;
+    width: 100%;
+  }
 
+  .hand {
+    fill: #121212;
+    top: 50%;
+    border-radius: 4px;
+    transform-origin: 50%;
+  }
+
+  .hand.second-hand {
+    fill: red;
+  }
   #display {
     color: #333333;
     text-align: center;
     font-family: Roboto;
-    font-size: 160px;
+    font-size: 110px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -381,19 +403,20 @@
     color: #333;
     text-align: center;
     font-family: Libre Baskerville;
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
   }
   .box-clock {
-    margin-left: -59rem;
+    // margin-left: -59rem;
     position: absolute;
     left: 50%;
-    top: -10%;
+    top: 50%;
     z-index: 1;
+    transform: translate(-50%, -50%) scale(2);
   }
 }
 .box-clock {
