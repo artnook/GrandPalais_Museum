@@ -150,7 +150,7 @@
     padding: 0 245px;
   }
 }
-.item {
+.app_item {
   background: #f7f7f7;
   height: 530px;
   // margin: 5rem 0rem;
@@ -161,7 +161,7 @@
   &::before {
     content: "Reservation";
     position: absolute;
-    top: 2100px;
+    top: 2010px;
     left: 300px;
     color: #333;
     text-align: center;

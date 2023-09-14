@@ -61,6 +61,8 @@
     <script defer src="./dist/js/clock.js"></script>
     <script defer src="./dist/js/slide.js"></script>
     <script defer src="./dist/js/youtube.js"></script>
+    <script defer src="./dist/js/calendar.js"></script>
+    <script defer src="./dist/js/on.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
@@ -128,470 +130,246 @@
               </div>
             </div>
             <div class="rn-03" id="divTimeTable">
-              <div class="rn-03-left on">
-                <div class="rn-03-left-tit">
-                  <p class="rn-04-left-xtit">날짜/시간 선택</p>
+              <div class="rn-04">
+                <a href="#">예매하기</a>
+              </div>
+              <ul class="rn-05">
+                <li class="on">
+                  <a href="#">
+                    <span>상세정보</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>관람후기(0)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>예매/취소안내</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="rn-tab-boxes">
+                <div class="rb-tab-area rn-0-6 on">
+                  <div class="rn-0801">
+                    <p class="rn08-tit">전시일정 정보</p>
+                    <div class="rn08-txt">
+                      <dl>
+                        <dt>[관람시간]</dt>
+                        <dd>-30분 단위의 회차별로 입장합니다.</dd>
+                      </dl>
+                      <dl>
+                        <dt>[관람 가능 시간]</dt>
+                        <dd>
+                          -월요일 오후 12시부터 오후 7시까지.
+                          <br />-수요일~일요일 오전 10시 ~ 오후 7시
+                          <br />-수요일 밤 9시까지 야상곡 <br />-매주 화요일휴무
+                          <br />-2023년 7월 22일 임시 휴업
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>[셔틀 버스]</dt>
+                        <dd>
+                          ACCESSGrand Palais Immersive - 110 rue de Lyon - 75012
+                          Paris Metro Bastille(1, 5, 8호선), Gare de Lyon(RER),
+                          버스: 20, 29, 65, 69, 76, 86, 87, 91
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="rn-0802">
+                    <p>
+                      <img src="./images/reservation_details/0802.png" alt="" />
+                    </p>
+                  </div>
+                  <div class="rn-0803">
+                    <div class="rn-03-title">
+                      <p>ETERNEL <br />MUCHA</p>
+                    </div>
+                    <div class="rn-03-img">
+                      <p>
+                        <img
+                          src="./images/reservation_details/0803.png"
+                          alt=""
+                        />
+                      </p>
+                    </div>
+                  </div>
+                  <div class="rn-0804">
+                    <div class="rn-04-title">
+                      <p>관람 포인트</p>
+                    </div>
+                    <div class="rn-04-img">
+                      <img src="./images/reservation_details/0804.png" alt="" />
+                      <p>
+                        Les Saisons, 1896, panneau décoratif, lithographie en
+                        couleur, 100,3 x 54 cm
+                      </p>
+                    </div>
+                  </div>
+                  <div class="rn-0805">
+                    <div class="rn-05-title">
+                      <p>Alphonse Maria Mucha <br />Exhibition</p>
+                    </div>
+                    <div class="rn-05-img">
+                      <img src="./images/reservation_details/0805.png" alt="" />
+                      <p>Lorenzaccio, 1896, color lithography,203.7 x 76 cm</p>
+                    </div>
+                  </div>
+                  <div class="rn-0806">
+                    <div class="rn-05-2-img">
+                      <img src="./images/reservation_details/0806.png" alt="" />
+                      <p>
+                        Affiche pour le papier à cigarette Job, 1896,
+                        lithographie en couleur, 66,7 x 46,4 cm
+                      </p>
+                    </div>
+                  </div>
+                  <div class="rn-0807">
+                    <div class="rn-05-3-img">
+                      <img src="./images/reservation_details/0807.png" alt="" />
+                      <p>
+                        The Abolition of Servage in Russia: Work in Freedom is
+                        the Foundation of a State (1861), The Slavic Epistle,
+                        1914,egg tempera and oil on canvas, 610 x 810 cm,
+                        Prague, National Gallery
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="rn-04-left-wrap">
-                  <div class="rn-04-left-cal">
-                    <!--캘린더-->
-                    <div id="rncalendar" class="hasDatepicker">
-                      <div
-                        class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
-                        style="display: block"
-                      >
-                        <div
-                          class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"
-                        >
-                          <a
-                            class="ui-datepicker-prev ui-corner-all ui-state-disabled"
-                            title="이전 달"
-                            ><span class="ui-icon ui-icon-circle-triangle-w"
-                              >이전 달</span
-                            ></a
-                          ><a
-                            class="ui-datepicker-next ui-corner-all"
-                            data-handler="next"
-                            data-event="click"
-                            title="다음 달"
-                            ><span class="ui-icon ui-icon-circle-triangle-e"
-                              >다음 달</span
-                            ></a
-                          >
-                          <div class="ui-datepicker-title">
-                            <span class="ui-datepicker-year">2023</span
-                            >.&nbsp;<span class="ui-datepicker-month">09</span>
-                          </div>
-                        </div>
-                        <table class="ui-datepicker-calendar">
-                          <thead>
-                            <tr>
-                              <th scope="col" class="ui-datepicker-week-end">
-                                <span title="일">일</span>
-                              </th>
-                              <th scope="col"><span title="월">월</span></th>
-                              <th scope="col"><span title="화">화</span></th>
-                              <th scope="col"><span title="수">수</span></th>
-                              <th scope="col"><span title="목">목</span></th>
-                              <th scope="col"><span title="금">금</span></th>
-                              <th scope="col" class="ui-datepicker-week-end">
-                                <span title="토">토</span>
-                              </th>
-                            </tr>
-                          </thead>
+                <div class="rb-tab-area rb-0-8">
+                  <div class="rn-0801 rn-infos-1">
+                    <div class="rn08-left-tit">예매</div>
+                    <div class="rn08-right-box">
+                      정가16
+                      <br />
+                      할인 가격 14 - 학생 / 18세 미만 / 구직자 / 장애인 / 파트너
+                      <br />
+                      유스 요금 12 - 6~25세
+                      <br />
+                      단체 요금 11유로/인당. 10시부터
+                      <br />
+                      가벼운 가격 6 - RSA / ASS /ASPA / 학교 방문 / 최소 연령
+                      <br />
+                      무료 6세 미만 / 장애인 80% 이상 및 동반 1인 / 가이드 /
+                      세서미 패스 및 컴퍼니 클럽 / ICOM, ICOMOS 카드 / 기자 및
+                      언론 / 문화카드 / 미술 평론가 및 예술 언론 신디케이트
+                      회원. 무료 입장의 혜택을 받는 방문객은 전시회 입장을 위해
+                      컨트롤에 직접 입장 증명서를 제시해야 합니다.
+                    </div>
+                  </div>
+                  <div class="rn-0801 rn-infos-2">
+                    <div class="rn-08-left-tit">티켓수령방법</div>
+                    <div class="rn08-right-box">
+                      <p>
+                        <span class="rn07-right-bold">현장수령</span>
+                        티켓은 예매자 본인 수령이 기본 원칙입니다.공연 당일
+                        예매확인서와 예매자의 신분증 을 지참하신 후 공연장
+                        매표소에서 티켓을 수령하시면 됩니다.
+                      </p>
+                      <p>
+                        <span rn07-right-bold>배송</span>
+                        배송을 선택하신 경우 예매완료(결제익일)
+                        <br />
+                        기준 5~7일 이내에 예매 시 입력하신 주소로
+                        배송됩니다.(영업일 기준)
+                        <br />
+                        일괄배송의 경우 각 상품의 지정된 배송일부터 순차적으로
+                        배송이 시작됩니다.
+                        <br />
+                        영업일 기준 5~7일 정도가 소요되며, 주소지에 따라 추가될
+                        수 있습니다.
+                        <br />
+                        배송 시작일은 상세정보 및 예매공지사항에서 확인하실 수
+                        있습니다.
+                        <br />
+                        티켓 배송은 일반 택배가 아닌 인편 배송으로 진행됩니다.
+                        <br />
+                        인편 배송의 경우 경비실이나 우편함 등에 보관이 불가하며,
+                        해당 장소로 배송 요청 후 분실 시 책임지지 않습니다.
+                        <br />
+                        부재 시 반송되니 반드시 티켓을 직접 받을 수 있는 주소를
+                        기입 바랍니다. 티켓 수령과 관련된 정책은 상품별로
+                        상이하니 자세한 내용은 각 상품 상세정보에서 확인
+                        부탁드립니다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="rn-0801 rn-infos-3">
+                    <div class="rn-08-left-tit">환불</div>
+                    <div class="rn-08-right-box">
+                      예매수수료는 예매 당일 밤 12시 이전까지 환불되며, 그 이후
+                      기간에는 환불되지 않습니다.
+                      <br />
+                      배송 및 반송처리 된 티켓의 배송비는 환불되지 않습니다.
+                      <div class="rn-08-tbl">
+                        <table>
+                          <caption></caption>
+                          <colgroup>
+                            <col width="40%" />
+                            <col width="40%" />
+                          </colgroup>
                           <tbody>
                             <tr>
-                              <td
-                                class="ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                &nbsp;
+                              <th scope="col" style="width: 278px">결제수단</th>
+                              <th scope="col" style="width: 416px">환불안내</th>
+                            </tr>
+                            <tr>
+                              <td class="rn-color-333" style="width: 278px">
+                                신용카드
                               </td>
-                              <td
-                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                &nbsp;
-                              </td>
-                              <td
-                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                &nbsp;
-                              </td>
-                              <td
-                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                &nbsp;
-                              </td>
-                              <td
-                                class="ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                &nbsp;
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">1</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span
-                                  class="ui-state-default"
-                                  style="color: rgb(237, 64, 55)"
-                                  >2</span
-                                >
+                              <td style="width: 416px">
+                                <p>
+                                  일반적으로 취소완료 되고 4~5일(토, 공휴일
+                                  제외) 후 카드 승인 취소가 확인됩니다.
+                                  <br />
+                                  취소시점에 따라 취소수수료와 예매수수료, 배송
+                                  받으신 경우 배송비를 제외한 금액만큼 환불 처리
+                                  됩니다.&nbsp;
+                                  <br />
+                                  (부분 취소 시에는 잔여 티켓 금액 + 수수료 등을
+                                  제외하고 환불 처리 됩니다.)
+                                  <br />
+                                  각 카드사의 취소 정책에 따라 승인취소 및
+                                  환급일에 차이가 있을 수 있습니다.
+                                  <br />
+                                  자세한 사항은 카드사로 문의 바랍니다.
+                                </p>
                               </td>
                             </tr>
                             <tr>
-                              <td
-                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span
-                                  class="ui-state-default"
-                                  style="color: rgb(237, 64, 55)"
-                                  >3</span
-                                >
+                              <td class="rn-color-333" style="width: 278px">
+                                무통장입금
                               </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">4</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">5</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">6</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">7</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">8</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span
-                                  class="ui-state-default"
-                                  style="color: rgb(237, 64, 55)"
-                                  >9</span
-                                >
-                              </td>
-                            </tr>
-                            <tr>
-                              <td
-                                class="ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span
-                                  class="ui-state-default"
-                                  style="color: rgb(237, 64, 55)"
-                                  >10</span
-                                >
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">11</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled ui-datepicker-today"
-                              >
-                                <span class="ui-state-default">12</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">13</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-days-cell-over ui-datepicker-current-day"
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a
-                                  class="ui-state-default ui-state-active eveon"
-                                  href="#"
-                                  >14</a
-                                >
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >15</a
-                                >
-                              </td>
-                              <td
-                                class="ui-datepicker-week-end"
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >16</a
-                                >
-                              </td>
-                            </tr>
-                            <tr>
-                              <td
-                                class="ui-datepicker-week-end"
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >17</a
-                                >
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">18</span>
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >19</a
-                                >
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >20</a
-                                >
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >21</a
-                                >
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >22</a
-                                >
-                              </td>
-                              <td
-                                class="ui-datepicker-week-end"
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >23</a
-                                >
-                              </td>
-                            </tr>
-                            <tr>
-                              <td
-                                class="ui-datepicker-week-end"
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >24</a
-                                >
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">25</span>
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >26</a
-                                >
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >27</a
-                                >
-                              </td>
-                              <td
-                                class=" "
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >28</a
-                                >
-                              </td>
-                              <td
-                                class="ui-datepicker-unselectable ui-state-disabled"
-                              >
-                                <span class="ui-state-default">29</span>
-                              </td>
-                              <td
-                                class="ui-datepicker-week-end"
-                                data-handler="selectDay"
-                                data-event="click"
-                                data-month="8"
-                                data-year="2023"
-                              >
-                                <a class="ui-state-default eveon" href="#"
-                                  >30</a
-                                >
+                              <td style="width: 416px">
+                                <p>
+                                  예매 취소 시 반드시 환불 받으실 계좌번호와
+                                  은행명을 입력하세요.
+                                  <br />
+                                  환불은 반드시 예매자 본인 명의의 계좌로만
+                                  받으실 수 있습니다.
+                                  <br />
+                                  취소수수료,예매수수료와 배송 받으신 경우
+                                  배송비를 제외한 후 환불 처리됩니다.
+                                  <br />
+                                  취소 후 환불 처리는 영업일 기준 3~5일 정도
+                                  소요됩니다.
+                                  <br />
+                                  환불진행상태는 MY공연&gt;예매확인/취소
+                                  상세내역에서 확인할 수 있습니다.
+                                </p>
+                                <span class="rn08-right-red">
+                                  * 배송 받은 티켓의 취소를 위해 고객센터로
+                                  발송하실 때, 환불 받으실 계좌 정보를 기입하여
+                                  보내주시면 보다 빠른 환불 처리가 가능합니다.
+                                </span>
                               </td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
                     </div>
-                  </div>
-                  <!--회차정보-->
-                  <div
-                    class="rn-04-left-calist scroll-color mCustomScrollbar _mCS_2 mCS_no_scrollbar"
-                    id="PerfPlayTime"
-                    style="height: 233px"
-                  >
-                    <a
-                      href="#"
-                      idtime="1235776"
-                      title="오후 7시 30분"
-                      onclick="jsf_pdi_ChangePlayTime('calendar','1235776','오후7시30분');"
-                      ><span>1회</span> 오후 7시 30분</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="rn-03-right off"></div>
-            </div>
-            <div class="rn-04">
-              <a href="#">예매하기</a>
-            </div>
-            <ul class="rn-05">
-              <li class="on">
-                <a href="#">
-                  <span>상세정보</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>관람후기(0)</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>예매/취소안내</span>
-                </a>
-              </li>
-            </ul>
-            <div class="rn-tab-boxes">
-              <div class="rb-tab-area rn-0-6 on">
-                <div class="rn-0801">
-                  <p class="rn08-tit">전시일정 정보</p>
-                  <div class="rn08-txt">
-                    <dl>
-                      <dt>[관람시간]</dt>
-                      <dd>-30분 단위의 회차별로 입장합니다.</dd>
-                    </dl>
-                    <dl>
-                      <dt>[관람 가능 시간]</dt>
-                      <dd>
-                        -월요일 오후 12시부터 오후 7시까지.
-                        <br />-수요일~일요일 오전 10시 ~ 오후 7시 <br />-수요일
-                        밤 9시까지 야상곡 <br />-매주 화요일휴무 <br />-2023년
-                        7월 22일 임시 휴업
-                      </dd>
-                    </dl>
-                    <dl>
-                      <dt>[셔틀 버스]</dt>
-                      <dd>
-                        ACCESSGrand Palais Immersive - 110 rue de Lyon - 75012
-                        Paris Metro Bastille(1, 5, 8호선), Gare de Lyon(RER),
-                        버스: 20, 29, 65, 69, 76, 86, 87, 91
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
-                <div class="rn-0802">
-                  <p>
-                    <img src="./images/reservation_details/0802.png" alt="" />
-                  </p>
-                </div>
-                <div class="rn-0803">
-                  <div class="rn-03-title">
-                    <p>ETERNEL <br />MUCHA</p>
-                  </div>
-                  <div class="rn-03-img">
-                    <p>
-                      <img src="./images/reservation_details/0803.png" alt="" />
-                    </p>
-                  </div>
-                </div>
-                <div class="rn-0804">
-                  <div class="rn-04-title">
-                    <p>관람 포인트</p>
-                  </div>
-                  <div class="rn-04-img">
-                    <img src="./images/reservation_details/0804.png" alt="" />
-                    <p>
-                      Les Saisons, 1896, panneau décoratif, lithographie en
-                      couleur, 100,3 x 54 cm
-                    </p>
-                  </div>
-                </div>
-                <div class="rn-0805">
-                  <div class="rn-05-title">
-                    <p>Alphonse Maria Mucha <br />Exhibition</p>
-                  </div>
-                  <div class="rn-05-img">
-                    <img src="./images/reservation_details/0805.png" alt="" />
-                    <p>Lorenzaccio, 1896, color lithography,203.7 x 76 cm</p>
-                  </div>
-                </div>
-                <div class="rn-0806">
-                  <div class="rn-05-2-img">
-                    <img src="./images/reservation_details/0806.png" alt="" />
-                    <p>
-                      Affiche pour le papier à cigarette Job, 1896, lithographie
-                      en couleur, 66,7 x 46,4 cm
-                    </p>
-                  </div>
-                </div>
-                <div class="rn-0807">
-                  <div class="rn-05-3-img">
-                    <img src="./images/reservation_details/0807.png" alt="" />
-                    <p>
-                      The Abolition of Servage in Russia: Work in Freedom is the
-                      Foundation of a State (1861), The Slavic Epistle, 1914,egg
-                      tempera and oil on canvas, 610 x 810 cm, Prague, National
-                      Gallery
-                    </p>
                   </div>
                 </div>
               </div>
