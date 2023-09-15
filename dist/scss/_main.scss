@@ -162,18 +162,6 @@
       display: flex;
       width: 100%;
     }
-    &::before {
-      content: "Reservation";
-      position: absolute;
-      top: -13%;
-      left: 16%;
-      color: #333;
-      text-align: center;
-      font-family: Libre Baskerville;
-      font-size: 80px;
-      font-weight: 400;
-      line-height: normal;
-    }
   }
 }
 
@@ -182,7 +170,7 @@
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
   height: 580px;
-  overflow: hidden;
+  // overflow: hidden;
   // border: 1px solid black;
   // margin: 2rem;
   // border-radius: 2rem;
@@ -194,6 +182,7 @@
     position: relative;
     top: -60px;
     left: 250px;
+    overflow: hidden;
 
     .image-slide {
       position: absolute;
@@ -218,6 +207,18 @@
 
   &.text {
     order: 1;
+    &::before {
+      content: "Reservation";
+      position: absolute;
+      top: -12%;
+      left: 0;
+      color: #333;
+      text-align: center;
+      font-family: Libre Baskerville;
+      font-size: 80px;
+      font-weight: 400;
+      line-height: normal;
+    }
 
     .inner {
       display: flex;
@@ -274,7 +275,7 @@
       }
       .paginator {
         position: absolute;
-        bottom: 70px;
+        bottom: 15%;
         left: 0;
         font-size: 1em;
         font-weight: 500;
@@ -508,16 +509,70 @@
       }
     }
   }
+  .part.text {
+    &::before {
+      left: 17px;
+    }
+    .inner {
+      .paginator {
+        left: 4%;
+      }
+    }
+  }
+  .part {
+    &.image {
+      left: 17.5%;
+    }
+  }
 }
 @media screen and (max-width: 1024px) {
-  .app_item {
-    &::before {
-      top: 1860px;
-      left: 45px;
+  #app {
+    .app_item {
+      &::before {
+        top: 1860px;
+        left: 45px;
+      }
+      .inner {
+        display: block;
+        width: 76%;
+      }
     }
   }
   .area3 .text-sub1 {
     margin-bottom: 440px;
+  }
+  .part {
+    &.text {
+      text-align: center;
+      margin-top: -37%;
+      &::before {
+        display: none;
+      }
+      .inner {
+        .centered {
+          h1 {
+            font-size: 30px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+          h5 {
+            font-size: 13px;
+          }
+          button {
+            margin-top: 10px;
+          }
+        }
+        .paginator {
+          left: 47%;
+          bottom: 97%;
+        }
+      }
+    }
+    &.image {
+      top: -250px;
+      overflow: hidden;
+    }
   }
 }
 @media screen and (max-width: 744px) {

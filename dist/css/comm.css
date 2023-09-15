@@ -1032,24 +1032,11 @@ legend {
   display: flex;
   width: 100%;
 }
-#app .app_item::before {
-  content: "Reservation";
-  position: absolute;
-  top: -13%;
-  left: 16%;
-  color: #333;
-  text-align: center;
-  font-family: Libre Baskerville;
-  font-size: 80px;
-  font-weight: 400;
-  line-height: normal;
-}
 
 .part {
   position: relative;
   flex: 1 0 0;
   height: 580px;
-  overflow: hidden;
 }
 .part.image {
   order: 2;
@@ -1057,6 +1044,7 @@ legend {
   position: relative;
   top: -60px;
   left: 250px;
+  overflow: hidden;
 }
 .part.image .image-slide {
   position: absolute;
@@ -1078,6 +1066,18 @@ legend {
 }
 .part.text {
   order: 1;
+}
+.part.text::before {
+  content: "Reservation";
+  position: absolute;
+  top: -12%;
+  left: 0;
+  color: #333;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: normal;
 }
 .part.text .inner {
   display: flex;
@@ -1129,7 +1129,7 @@ legend {
 }
 .part.text .inner .paginator {
   position: absolute;
-  bottom: 70px;
+  bottom: 15%;
   left: 0;
   font-size: 1em;
   font-weight: 500;
@@ -1347,14 +1347,54 @@ legend {
   .app_item .inner .part .image {
     left: 213px;
   }
+  .part.text::before {
+    left: 17px;
+  }
+  .part.text .inner .paginator {
+    left: 4%;
+  }
+  .part.image {
+    left: 17.5%;
+  }
 }
 @media screen and (max-width: 1024px) {
-  .app_item::before {
+  #app .app_item::before {
     top: 1860px;
     left: 45px;
   }
+  #app .app_item .inner {
+    display: block;
+    width: 76%;
+  }
   .area3 .text-sub1 {
     margin-bottom: 440px;
+  }
+  .part.text {
+    text-align: center;
+    margin-top: -37%;
+  }
+  .part.text::before {
+    display: none;
+  }
+  .part.text .inner .centered h1 {
+    font-size: 30px;
+  }
+  .part.text .inner .centered h3 {
+    font-size: 15px;
+  }
+  .part.text .inner .centered h5 {
+    font-size: 13px;
+  }
+  .part.text .inner .centered button {
+    margin-top: 10px;
+  }
+  .part.text .inner .paginator {
+    left: 47%;
+    bottom: 97%;
+  }
+  .part.image {
+    top: -250px;
+    overflow: hidden;
   }
 }
 .contents {
