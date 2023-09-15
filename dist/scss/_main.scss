@@ -32,8 +32,8 @@
   }
   .slide-txt {
     position: absolute;
-    top: 660px;
-    left: 1110px;
+    top: 75%;
+    left: 70%;
     color: $w;
     font-family: Libre Baskerville;
     font-size: 40px;
@@ -150,26 +150,30 @@
     padding: 0 245px;
   }
 }
-.app_item {
-  background: #f7f7f7;
-  height: 530px;
-  // margin: 5rem 0rem;
-  .inner {
-    display: flex;
-    width: 100%;
-  }
-  &::before {
-    content: "Reservation";
-    position: absolute;
-    top: 2010px;
-    left: 300px;
-    color: #333;
-    text-align: center;
-    font-family: Libre Baskerville;
-    font-size: 80px;
-    font-weight: 400;
-    line-height: normal;
-    height: 100px;
+#app {
+  position: relative;
+  top: 0;
+  left: 0;
+  .app_item {
+    background: #f7f7f7;
+    height: 530px;
+    // margin: 5rem 0rem;
+    .inner {
+      display: flex;
+      width: 100%;
+    }
+    &::before {
+      content: "Reservation";
+      position: absolute;
+      top: -13%;
+      left: 16%;
+      color: #333;
+      text-align: center;
+      font-family: Libre Baskerville;
+      font-size: 80px;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 }
 
@@ -302,7 +306,8 @@
     text-align: center;
     padding-top: 4rem;
     position: absolute;
-    top: 0;
+    top: 13%;
+    left: 0;
   }
   .box-text .text-head {
     letter-spacing: -0.01em;
@@ -314,7 +319,7 @@
     img {
       display: flex;
       margin: 0 auto;
-      width: 75%;
+      transform: scale(0.75);
     }
   }
   .text-head .text1 {
@@ -343,7 +348,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 660px;
+    margin-bottom: 54%;
   }
   .box-text .text-date {
     letter-spacing: -0.01em;
@@ -408,7 +413,8 @@
     font-weight: 500;
     line-height: normal;
     position: absolute;
-    bottom: 50px;
+    top: 83%;
+    bottom: 0;
   }
   .box-clock {
     // margin-left: -59rem;
@@ -446,14 +452,13 @@
   display: flex;
   margin: 60px 0;
   .txt_box {
-    width: calc(100% - 235px);
-    padding-right: 250px;
+    width: 100%;
+    padding-right: 490px;
     h2 {
       color: #333;
       font-family: Roboto;
       font-size: 45px;
-      line-height: 1.5;
-      margin-top: 160px;
+      line-height: 1.4;
     }
   }
   #spin {
@@ -482,7 +487,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 840px;
-    margin-top: -250px;
+    margin-left: 70%;
+    margin-top: -30%;
   }
+}
+@media screen and (max-width: 1280px) {
+  .inner {
+    padding: 0 25px;
+  }
+  .app_item {
+    &::before {
+      top: 2000px;
+      left: 45px;
+    }
+  }
+  .app_item {
+    .inner {
+      .part .image {
+        left: 213px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .app_item {
+    &::before {
+      top: 1860px;
+      left: 45px;
+    }
+  }
+  .area3 .text-sub1 {
+    margin-bottom: 440px;
+  }
+}
+@media screen and (max-width: 744px) {
+}
+@media screen and (max-width: 428px) {
 }
