@@ -286,7 +286,7 @@
 }
 
 .clock {
-  margin-top: 330px;
+  margin-top: 10%;
   position: relative;
 }
 .area3 {
@@ -526,8 +526,33 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .exb-museum {
+    &::after {
+      height: 80%;
+      top: 30px;
+    }
+    .exb-box {
+      display: block;
+      height: 100%;
+      width: 100%;
+      transform: scale(0.8);
+      .g_title {
+        text-align: center;
+      }
+      .txt-box {
+        display: flex;
+        align-items: center;
+      }
+      .img_box {
+        width: 90%;
+        display: flex;
+        padding-left: 110px;
+      }
+    }
+  }
   #app {
     .app_item {
+      margin-top: 40%;
       &::before {
         top: 1860px;
         left: 45px;
@@ -550,6 +575,7 @@
       }
       .inner {
         .centered {
+          padding-top: 11%;
           h1 {
             font-size: 30px;
           }
@@ -565,7 +591,7 @@
         }
         .paginator {
           left: 47%;
-          bottom: 97%;
+          bottom: 90%;
         }
       }
     }

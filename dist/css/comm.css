@@ -1137,7 +1137,7 @@ legend {
 }
 
 .clock {
-  margin-top: 330px;
+  margin-top: 10%;
   position: relative;
 }
 
@@ -1358,6 +1358,31 @@ legend {
   }
 }
 @media screen and (max-width: 1024px) {
+  .exb-museum::after {
+    height: 80%;
+    top: 30px;
+  }
+  .exb-museum .exb-box {
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+  }
+  .exb-museum .exb-box .g_title {
+    text-align: center;
+  }
+  .exb-museum .exb-box .txt-box {
+    display: flex;
+    align-items: center;
+  }
+  .exb-museum .exb-box .img_box {
+    width: 90%;
+    display: flex;
+    padding-left: 110px;
+  }
+  #app .app_item {
+    margin-top: 40%;
+  }
   #app .app_item::before {
     top: 1860px;
     left: 45px;
@@ -1376,6 +1401,9 @@ legend {
   .part.text::before {
     display: none;
   }
+  .part.text .inner .centered {
+    padding-top: 11%;
+  }
   .part.text .inner .centered h1 {
     font-size: 30px;
   }
@@ -1390,7 +1418,7 @@ legend {
   }
   .part.text .inner .paginator {
     left: 47%;
-    bottom: 97%;
+    bottom: 90%;
   }
   .part.image {
     top: -250px;
@@ -1577,7 +1605,6 @@ legend {
   display: flex;
   flex-direction: column;
   margin-left: -760px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -1585,7 +1612,6 @@ legend {
   margin: 0;
   text-align: center;
   color: #333;
-  text-align: center;
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
