@@ -104,7 +104,7 @@
   .rn-tab-boxes {
     .rn-0-6 {
       display: none;
-      .rn08-tit {
+      .rn06-tit {
         display: flex;
         justify-content: center;
         color: var(--1388FF, #1388ff);
@@ -112,7 +112,7 @@
         font-size: 36px;
         font-weight: 700;
       }
-      .rn08-txt {
+      .rn06-txt {
         dl {
           display: flex;
           flex-direction: column;
@@ -123,7 +123,7 @@
           line-height: 40px;
         }
       }
-      .rn-0802 {
+      .rn-0602 {
         margin: 200px 0;
       }
       .rn-03-title {
@@ -224,7 +224,7 @@
       }
     }
     .rb-0-8 {
-      display: none;
+      // display: none;
       .rn-infos-1 {
         .rn08-left-tit {
           color: #1388ff;

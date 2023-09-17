@@ -1200,7 +1200,7 @@ legend {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 54%;
+  padding-bottom: 58%;
 }
 .area3 .box-text .text-date {
   letter-spacing: -0.01em;
@@ -1353,6 +1353,10 @@ legend {
   .part.text .inner .paginator {
     left: 4%;
   }
+  .part.text .inner .centered button {
+    width: 30px;
+    height: 30px;
+  }
   .part.image {
     left: 17.5%;
   }
@@ -1362,11 +1366,18 @@ legend {
     height: 80%;
     top: 30px;
   }
+  .exb-museum .contetnt_area::before {
+    display: none;
+  }
   .exb-museum .exb-box {
     display: block;
     height: 100%;
     width: 100%;
     transform: scale(0.8);
+  }
+  .exb-museum .exb-box .g_tit {
+    text-align: center;
+    width: 426px;
   }
   .exb-museum .exb-box .g_title {
     text-align: center;
@@ -1390,9 +1401,6 @@ legend {
   #app .app_item .inner {
     display: block;
     width: 76%;
-  }
-  .area3 .text-sub1 {
-    margin-bottom: 440px;
   }
   .part.text {
     text-align: center;
@@ -1531,7 +1539,7 @@ legend {
 .rw2 .rn-tab-boxes .rn-0-6 {
   display: none;
 }
-.rw2 .rn-tab-boxes .rn-0-6 .rn08-tit {
+.rw2 .rn-tab-boxes .rn-0-6 .rn06-tit {
   display: flex;
   justify-content: center;
   color: var(--1388FF, #1388ff);
@@ -1539,7 +1547,7 @@ legend {
   font-size: 36px;
   font-weight: 700;
 }
-.rw2 .rn-tab-boxes .rn-0-6 .rn08-txt dl {
+.rw2 .rn-tab-boxes .rn-0-6 .rn06-txt dl {
   display: flex;
   flex-direction: column;
   color: #333;
@@ -1548,7 +1556,7 @@ legend {
   font-weight: 500;
   line-height: 40px;
 }
-.rw2 .rn-tab-boxes .rn-0-6 .rn-0802 {
+.rw2 .rn-tab-boxes .rn-0-6 .rn-0602 {
   margin: 200px 0;
 }
 .rw2 .rn-tab-boxes .rn-0-6 .rn-03-title {
@@ -1644,9 +1652,6 @@ legend {
   font-size: 20px;
   line-height: normal;
   margin-top: 10px;
-}
-.rw2 .rn-tab-boxes .rb-0-8 {
-  display: none;
 }
 .rw2 .rn-tab-boxes .rb-0-8 .rn-infos-1 .rn08-left-tit {
   color: #1388ff;
