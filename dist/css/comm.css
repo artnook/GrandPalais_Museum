@@ -1753,4 +1753,47 @@ legend {
 }
 .rw2 .rn-product-area2 dd {
   font-size: 1em;
+}
+
+.pr-bnr {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pr-bnr picture {
+  display: block;
+  width: 100%;
+}
+.pr-bnr picture::before {
+  width: 100%;
+  padding-top: 100%;
+}
+.pr-bnr picture img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pr-bnr::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 99%;
+}
+.pr-bnr p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }/*# sourceMappingURL=comm.css.map */

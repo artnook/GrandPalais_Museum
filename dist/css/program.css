@@ -1,0 +1,94 @@
+.pr-bnr {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pr-bnr picture {
+  display: block;
+  width: 100%;
+}
+.pr-bnr picture::before {
+  width: 100%;
+  padding-top: 100%;
+}
+.pr-bnr picture img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pr-bnr::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 99.2%;
+}
+.pr-bnr p {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  color: #fff;
+  font-size: 60px;
+  z-index: 1;
+}
+
+.pr-im1 {
+  margin-top: 15%;
+}
+.pr-im1 p {
+  color: #333;
+  font-size: 70px;
+}
+.pr-im1 img {
+  width: 35%;
+}
+
+.pr-im2 {
+  margin-left: 45%;
+}
+.pr-im2 p {
+  color: #333;
+  font-size: 70px;
+  margin-left: 45%;
+}
+
+.pr-im3 {
+  margin-top: 10%;
+}
+.pr-im3 p {
+  color: #333;
+  font-size: 70px;
+}
+.pr-im3 img {
+  width: 40%;
+}
+
+.pr-txt1 {
+  margin-top: 5%;
+}
+.pr-txt1 .txt-1 {
+  color: #333;
+  font-size: 30px;
+  width: 55%;
+}
+.pr-txt1 .txt-2 {
+  color: #333;
+  font-size: 14px;
+  width: 45%;
+}
+
+.pr-im4 {
+  margin-left: 57%;
+}
+.pr-im4 p {
+  color: #333;
+  font-size: 70px;
+}
+.pr-im4 img {
+  width: 50%;
+}/*# sourceMappingURL=program.css.map */

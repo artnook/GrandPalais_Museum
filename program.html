@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서브타이틀 | 프로젝트 이름</title>
+    <meta
+      name="description"
+      content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
+    <link rel="stylesheet" href="./dist/css/program.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/js/include.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
+    <script defer src="./dist/js/clock.js"></script>
+    <script defer src="./dist/js/slide.js"></script>
+    <script defer src="./dist/js/youtube.js"></script>
+  </head>
+  <body>
+    <div id="u-skip">
+      <a href="#gnb"><span>주요메뉴 바로가기</span></a>
+      <a href="#main"><span>컨텐츠 바로가기</span></a>
+    </div>
+    <div class="wrap">
+      <!-- logo 왼쪽 type -->
+      <header data-include-path="./outline/header.html"></header>
+
+      <main id="main">
+        <!-- section : 제목이 있는 그룹  -->
+        <!-- 배경이 100% 안에 내용이 margin이 있고 싶을 때 main의 container를 배꼬 원하는 부분을 .container로 싸준다.  -->
+        <section class="pr-bnr">
+          <picture>
+            <img src="./images/program/program-bnr.png" alt="그랑팔레 이미지" />
+          </picture>
+          <p>Program</p>
+        </section>
+        <section class="pr-im1">
+          <div class="inner">
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <p>
+                We Are <br />
+                Grand Palais.
+              </p>
+              <img
+                src="./images/program/im1.png"
+                alt="그랑팔레에서의 멋진 순간"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="pr-im2">
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <p>MUSE</p>
+            <img src="./images/program/im2.png" alt="뮤즈" />
+          </div>
+        </section>
+        <section class="pr-im3">
+          <div class="inner">
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <p>Léon Monet</p>
+              <img src="./images/program/im3.png" alt="레온 모넷" />
+            </div>
+          </div>
+        </section>
+        <section class="pr-txt1">
+          <div class="inner">
+            <p class="txt-1">
+              Réunion des musés nationaux -
+              <span style="color: #1388ff">Grand Palais</span> is a
+              <span style="color: #1388ff">cultural</span>
+              operator whose mission is to promote access to culture throughout
+              the <span style="color: #1388ff">country and beyond.</span>
+            </p>
+            <p class="txt-2">
+              Réunion des musées nationaux - Grand Palais는 국토 전체와
+              그너머에서 문화에 대한 접근을 촉진하는 것을 사명으로 하는 문화
+              운영자입니다.
+            </p>
+          </div>
+        </section>
+        <section class="pr-im4">
+          <div class="inner">
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <p>Mucha</p>
+              <img src="./images/program/im4.png" alt="무하" />
+            </div>
+          </div>
+        </section>
+        <script>
+          AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+        </script>
+      </main>
+      <footer data-include-path="./outline/footer.html"></footer>
+    </div>
+  </body>
+</html>
