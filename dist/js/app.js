@@ -12,7 +12,7 @@ new Vue({
             description:
               "Grand Palais Immersif(Rmn - Grand Palais의 자회사)와 프라하의 Mucha 재단이 공동 제작한 전시회.",
             credit: "진행중 전시기간 2023.03.22~2023.11.05",
-            image: "/images/main/tiket img1.png",
+            image: "/images/main/tiket-img1.png",
             color: "#1388ff",
           },
           {
@@ -20,7 +20,7 @@ new Vue({
             description:
               "피카소 사망 50주년을 기념하여 룩셈부르크 박물관은 20세기의 두 아이콘인 파블로 피카소와 거트루드 스타인의 특별한 우정 이야기를 다루는 주요 전시회를 개최합니다.",
             credit: "진행중 전시기간 2023.9.13~2024.1.28",
-            image: "/images/main/tiket img2.png",
+            image: "/images/main/tiket-img2.png",
             color: "#1388ff",
           },
           {
@@ -28,7 +28,7 @@ new Vue({
             description:
               "유럽 ​​문화유산의 날을 맞아 그랑 팔레(Grand Palais)와 인근 여러 기관 주변에서 매혹적인 퍼즐 게임을 통해 시간을 거슬러 올라가 보세요!",
             credit: "진행중 전시기간 2023.9.16~2023.9.17",
-            image: "/images/main/tiket img3.png",
+            image: "/images/main/tiket-img3.png",
             color: "#1388ff",
           },
         ],
@@ -43,7 +43,7 @@ new Vue({
         description:
           "Grand Palais Immersif(Rmn - Grand Palais의 자회사)와 프라하의 Mucha 재단이 공동 제작한 전시회.",
         credit: "진행중 전시기간 2023.03.22~2023.11.05",
-        image: "/images/main/tiket img1.png",
+        image: "/images/main/tiket-img1.png",
         color: "#1388ff",
       },
       {
@@ -51,7 +51,7 @@ new Vue({
         description:
           "피카소 사망 50주년을 기념하여 룩셈부르크 박물관은 20세기의 두 아이콘인 파블로 피카소와 거트루드 스타인의 특별한 우정 이야기를 다루는 주요 전시회를 개최합니다.",
         credit: "진행중 전시기간 2023.9.13~2024.1.28",
-        image: "/images/main/tiket img2.png",
+        image: "/images/main/tiket-img2.png",
         color: "#1388ff",
       },
       {
@@ -59,7 +59,7 @@ new Vue({
         description:
           "유럽 ​​문화유산의 날을 맞아 그랑 팔레(Grand Palais)와 인근 여러 기관 주변에서 매혹적인 퍼즐 게임을 통해 시간을 거슬러 올라가 보세요!",
         credit: "진행중 전시기간 2023.9.16~2023.9.17",
-        image: "/images/main/tiket img3.png",
+        image: "/images/main/tiket-img3.png",
         color: "#1388ff",
       },
     ],

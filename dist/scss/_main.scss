@@ -35,8 +35,7 @@
     top: 75%;
     left: 70%;
     color: $w;
-    font-family: Libre Baskerville;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 .museum {
@@ -61,11 +60,10 @@
   .contetnt_area {
     &::before {
       content: "Museum";
-      font-size: 150px;
+      font-size: 9.375rem;
       position: absolute;
       right: 0px;
       bottom: -180px;
-      font-family: Libre Baskerville;
     }
   }
   .exb-box {
@@ -74,7 +72,7 @@
     // width: 1192px;
     height: 400px;
     background: #000;
-    margin: 317px auto;
+    margin: 200px auto;
     box-shadow: 5px 5px 3px grey;
     .txt-box {
       display: flex;
@@ -102,17 +100,14 @@
     .g_title {
       margin-top: 20px;
       color: $w;
-
-      font-family: Libre Baskerville;
-      font-size: 35px;
+      font-size: 2.1875rem;
       font-weight: 400;
     }
     .g_tit {
       width: 523px;
       margin-top: 22px;
       color: $w;
-      font-family: "Libre Baskerville";
-      font-size: 17px;
+      font-size: 1.0625rem;
       line-height: normal;
     }
   }
@@ -127,7 +122,7 @@
     justify-content: center;
     align-items: center;
     color: $w;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Roboto;
   }
   .img_box {
@@ -152,7 +147,7 @@
 }
 #app {
   position: relative;
-  top: 0;
+  top: -200px;
   left: 0;
   .app_item {
     background: #f7f7f7;
@@ -214,8 +209,7 @@
       left: 0;
       color: #333;
       text-align: center;
-      font-family: Libre Baskerville;
-      font-size: 80px;
+      font-size: 5rem;
       font-weight: 400;
       line-height: normal;
     }
@@ -233,14 +227,13 @@
         h1 {
           color: #333;
           font-family: Roboto;
-          font-size: 40px;
+          font-size: 2.5rem;
           line-height: 90px;
         }
 
         h3 {
           color: #333;
-          font-family: Libre Baskerville;
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: 400;
         }
 
@@ -248,7 +241,7 @@
           margin: 0;
           color: #333;
           font-family: Roboto;
-          font-size: 15px;
+          font-size: 0.9375rem;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -256,7 +249,7 @@
 
         h6 {
           margin: 0 0 3px 0;
-          font-size: 10px;
+          font-size: 0.625rem;
           font-weight: 400;
           color: white;
         }
@@ -277,7 +270,7 @@
         position: absolute;
         bottom: 15%;
         left: 0;
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 500;
         cursor: pointer;
       }
@@ -286,7 +279,7 @@
 }
 
 .clock {
-  margin-top: 10%;
+  margin-top: -10%;
   position: relative;
 }
 .area3 {
@@ -305,30 +298,43 @@
   .box-text {
     width: 100%;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 2rem;
     position: absolute;
     top: 13%;
     left: 0;
   }
   .box-text .text-head {
-    letter-spacing: -0.01em;
-    margin-bottom: 2rem;
+    letter-spacing: 1px;
     font-size: 18rem;
-    line-height: 1rem;
+    line-height: 16px;
   }
   .box-image {
     img {
       display: flex;
       margin: 0 auto;
       transform: scale(0.75);
+      width: 65vw;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 12%;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0),
+        rgb(255, 255, 255)
+      );
+      width: 100%;
+      height: 30%;
+      margin: 0 auto;
     }
   }
   .text-head .text1 {
     color: #333;
     text-align: center;
-    font-family: Libre Baskerville;
-    font-size: 110px;
-    font-style: normal;
+    font-size: 7vw;
     font-weight: 400;
     line-height: normal;
   }
@@ -336,28 +342,27 @@
     color: #1388ff;
     text-align: center;
     font-family: Roboto;
-    font-size: 90px;
-    font-style: normal;
+    font-size: 6vw;
     font-weight: 500;
     line-height: normal;
   }
   .text-sub1 {
+    margin-bottom: 13rem;
+  }
+  .text-sub2 {
     color: #333;
     text-align: center;
-    font-family: Libre Baskerville;
-    font-size: 18px;
-    font-style: normal;
+    font-size: 1vw;
     font-weight: 400;
     line-height: normal;
-    padding-bottom: 58%;
   }
   .box-text .text-date {
     letter-spacing: -0.01em;
     color: #333;
     text-align: center;
-    font-family: Libre Baskerville;
-    font-size: 110px;
+    font-size: 7vw;
     line-height: normal;
+    padding-top: 20%;
   }
 
   .clock {
@@ -391,8 +396,7 @@
     color: #333333;
     text-align: center;
     font-family: Roboto;
-    font-size: 110px;
-    font-style: normal;
+    font-size: 6vw;
     font-weight: 500;
     line-height: normal;
   }
@@ -400,21 +404,18 @@
     color: #333;
     text-align: center;
     font-family: Roboto;
-    font-size: 160px;
-    font-style: normal;
+    font-size: 10rem;
     font-weight: 500;
     line-height: normal;
   }
   .text-sub3 {
     color: #333;
     text-align: center;
-    font-family: Libre Baskerville;
-    font-size: 18px;
-    font-style: normal;
+    font-size: 1vw;
     font-weight: 500;
     line-height: normal;
     position: absolute;
-    top: 83%;
+    top: 80%;
     bottom: 0;
   }
   .box-clock {
@@ -451,14 +452,13 @@
 
 .circle {
   display: flex;
-  margin: 60px 0;
   .txt_box {
     width: 100%;
     padding-right: 490px;
     h2 {
       color: #333;
       font-family: Roboto;
-      font-size: 45px;
+      font-size: 2.8125rem;
       line-height: 1.4;
     }
   }
@@ -578,8 +578,6 @@
       }
     }
   }
-  .area3 .text-sub1 {
-  }
   .part {
     &.text {
       text-align: center;
@@ -591,13 +589,13 @@
         .centered {
           padding-top: 11%;
           h1 {
-            font-size: 30px;
+            font-size: 1.875rem;
           }
           h3 {
-            font-size: 15px;
+            font-size: 0.9375rem;
           }
           h5 {
-            font-size: 13px;
+            font-size: 0.8125rem;
           }
           button {
             margin-top: 10px;
@@ -614,8 +612,49 @@
       overflow: hidden;
     }
   }
+  .area3 {
+    .box-text {
+      .text-date {
+        padding-top: 20%;
+      }
+    }
+  }
 }
 @media screen and (max-width: 744px) {
+  .exb-museum {
+    .exb-box {
+      .img_box {
+        padding-left: 75px;
+      }
+    }
+  }
+  .part {
+    &.image {
+      left: 5%;
+      transform: scale(0.9);
+      .image-slide {
+        width: 93%;
+      }
+    }
+  }
+  .part {
+    &.text {
+      margin-top: -61%;
+      .inner {
+        .paginator {
+          bottom: 90%;
+        }
+        .centered {
+          h1 {
+            font-size: 1.375rem;
+          }
+          h3 {
+            font-size: 0.8125rem;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 428px) {
 }

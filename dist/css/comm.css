@@ -907,8 +907,7 @@ legend {
   top: 75%;
   left: 70%;
   color: #fff;
-  font-family: Libre Baskerville;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .museum {
@@ -934,18 +933,17 @@ legend {
 }
 .exb-museum .contetnt_area::before {
   content: "Museum";
-  font-size: 150px;
+  font-size: 9.375rem;
   position: absolute;
   right: 0px;
   bottom: -180px;
-  font-family: Libre Baskerville;
 }
 .exb-museum .exb-box {
   display: flex;
   justify-content: space-between;
   height: 400px;
   background: #000;
-  margin: 317px auto;
+  margin: 200px auto;
   box-shadow: 5px 5px 3px grey;
 }
 .exb-museum .exb-box .txt-box {
@@ -974,16 +972,14 @@ legend {
 .exb-museum .exb-box .g_title {
   margin-top: 20px;
   color: #fff;
-  font-family: Libre Baskerville;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 400;
 }
 .exb-museum .exb-box .g_tit {
   width: 523px;
   margin-top: 22px;
   color: #fff;
-  font-family: "Libre Baskerville";
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: normal;
 }
 .exb-museum .btn_more {
@@ -995,7 +991,7 @@ legend {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Roboto;
 }
 .exb-museum .img_box {
@@ -1021,7 +1017,7 @@ legend {
 
 #app {
   position: relative;
-  top: 0;
+  top: -200px;
   left: 0;
 }
 #app .app_item {
@@ -1074,8 +1070,7 @@ legend {
   left: 0;
   color: #333;
   text-align: center;
-  font-family: Libre Baskerville;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 400;
   line-height: normal;
 }
@@ -1092,27 +1087,26 @@ legend {
 .part.text .inner .centered h1 {
   color: #333;
   font-family: Roboto;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 90px;
 }
 .part.text .inner .centered h3 {
   color: #333;
-  font-family: Libre Baskerville;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 .part.text .inner .centered h5 {
   margin: 0;
   color: #333;
   font-family: Roboto;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .part.text .inner .centered h6 {
   margin: 0 0 3px 0;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 400;
   color: white;
 }
@@ -1131,13 +1125,13 @@ legend {
   position: absolute;
   bottom: 15%;
   left: 0;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .clock {
-  margin-top: 10%;
+  margin-top: -10%;
   position: relative;
 }
 
@@ -1158,28 +1152,37 @@ legend {
 .area3 .box-text {
   width: 100%;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
   position: absolute;
   top: 13%;
   left: 0;
 }
 .area3 .box-text .text-head {
-  letter-spacing: -0.01em;
-  margin-bottom: 2rem;
+  letter-spacing: 1px;
   font-size: 18rem;
-  line-height: 1rem;
+  line-height: 16px;
 }
 .area3 .box-image img {
   display: flex;
   margin: 0 auto;
   transform: scale(0.75);
+  width: 65vw;
+}
+.area3 .box-image::after {
+  content: "";
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(255, 255, 255));
+  width: 100%;
+  height: 30%;
+  margin: 0 auto;
 }
 .area3 .text-head .text1 {
   color: #333;
   text-align: center;
-  font-family: Libre Baskerville;
-  font-size: 110px;
-  font-style: normal;
+  font-size: 7vw;
   font-weight: 400;
   line-height: normal;
 }
@@ -1187,28 +1190,27 @@ legend {
   color: #1388ff;
   text-align: center;
   font-family: Roboto;
-  font-size: 90px;
-  font-style: normal;
+  font-size: 6vw;
   font-weight: 500;
   line-height: normal;
 }
 .area3 .text-sub1 {
+  margin-bottom: 13rem;
+}
+.area3 .text-sub2 {
   color: #333;
   text-align: center;
-  font-family: Libre Baskerville;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1vw;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 58%;
 }
 .area3 .box-text .text-date {
   letter-spacing: -0.01em;
   color: #333;
   text-align: center;
-  font-family: Libre Baskerville;
-  font-size: 110px;
+  font-size: 7vw;
   line-height: normal;
+  padding-top: 20%;
 }
 .area3 .clock {
   width: 100%;
@@ -1239,8 +1241,7 @@ legend {
   color: #333333;
   text-align: center;
   font-family: Roboto;
-  font-size: 110px;
-  font-style: normal;
+  font-size: 6vw;
   font-weight: 500;
   line-height: normal;
 }
@@ -1248,21 +1249,18 @@ legend {
   color: #333;
   text-align: center;
   font-family: Roboto;
-  font-size: 160px;
-  font-style: normal;
+  font-size: 10rem;
   font-weight: 500;
   line-height: normal;
 }
 .area3 .text-sub3 {
   color: #333;
   text-align: center;
-  font-family: Libre Baskerville;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 1vw;
   font-weight: 500;
   line-height: normal;
   position: absolute;
-  top: 83%;
+  top: 80%;
   bottom: 0;
 }
 .area3 .box-clock {
@@ -1296,7 +1294,6 @@ legend {
 
 .circle {
   display: flex;
-  margin: 60px 0;
 }
 .circle .txt_box {
   width: 100%;
@@ -1305,7 +1302,7 @@ legend {
 .circle .txt_box h2 {
   color: #333;
   font-family: Roboto;
-  font-size: 45px;
+  font-size: 2.8125rem;
   line-height: 1.4;
 }
 .circle #spin {
@@ -1413,13 +1410,13 @@ legend {
     padding-top: 11%;
   }
   .part.text .inner .centered h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .part.text .inner .centered h3 {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .part.text .inner .centered h5 {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .part.text .inner .centered button {
     margin-top: 10px;
@@ -1431,6 +1428,33 @@ legend {
   .part.image {
     top: -250px;
     overflow: hidden;
+  }
+  .area3 .box-text .text-date {
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 744px) {
+  .exb-museum .exb-box .img_box {
+    padding-left: 75px;
+  }
+  .part.image {
+    left: 5%;
+    transform: scale(0.9);
+  }
+  .part.image .image-slide {
+    width: 93%;
+  }
+  .part.text {
+    margin-top: -61%;
+  }
+  .part.text .inner .paginator {
+    bottom: 90%;
+  }
+  .part.text .inner .centered h1 {
+    font-size: 1.375rem;
+  }
+  .part.text .inner .centered h3 {
+    font-size: 0.8125rem;
   }
 }
 .contents {
@@ -1783,17 +1807,69 @@ legend {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 99%;
+  height: 99.2%;
 }
 .pr-bnr p {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 45%;
+  left: 42%;
   color: #fff;
-  text-align: center;
-  font-family: Libre Baskerville;
   font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  z-index: 1;
+}
+
+.pr-im1 {
+  margin-top: 15%;
+}
+.pr-im1 p {
+  color: #333;
+  font-size: 70px;
+}
+.pr-im1 img {
+  width: 35%;
+}
+
+.pr-im2 {
+  margin-left: 45%;
+}
+.pr-im2 p {
+  color: #333;
+  font-size: 70px;
+  margin-left: 45%;
+}
+
+.pr-im3 {
+  margin-top: 10%;
+}
+.pr-im3 p {
+  color: #333;
+  font-size: 70px;
+}
+.pr-im3 img {
+  width: 40%;
+}
+
+.pr-txt1 {
+  margin-top: 5%;
+}
+.pr-txt1 .txt-1 {
+  color: #333;
+  font-size: 30px;
+  width: 55%;
+}
+.pr-txt1 .txt-2 {
+  color: #333;
+  font-size: 14px;
+  width: 45%;
+}
+
+.pr-im4 {
+  margin-left: 57%;
+}
+.pr-im4 p {
+  color: #333;
+  font-size: 70px;
+}
+.pr-im4 img {
+  width: 50%;
 }/*# sourceMappingURL=comm.css.map */
