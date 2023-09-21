@@ -347,7 +347,7 @@
     line-height: normal;
   }
   .text-sub1 {
-    margin-bottom: 13rem;
+    margin-bottom: 7rem;
   }
   .text-sub2 {
     color: #333;
@@ -362,7 +362,7 @@
     text-align: center;
     font-size: 7vw;
     line-height: normal;
-    padding-top: 20%;
+    padding-top: 31%;
   }
 
   .clock {
@@ -415,7 +415,7 @@
     font-weight: 500;
     line-height: normal;
     position: absolute;
-    bottom: 29%;
+    bottom: 25%;
   }
   .box-clock {
     // margin-left: -59rem;
@@ -495,6 +495,26 @@
   .inner {
     padding: 0 25px;
   }
+  .exb-museum {
+    .contetnt_area {
+      &::before {
+        font-size: 9rem;
+      }
+    }
+    .exb-box {
+      .txt-box {
+        h2 {
+          font-size: 1rem;
+        }
+        .g_title {
+          font-size: 2.2rem;
+        }
+        .g_tit {
+          font-size: 1.11rem;
+        }
+      }
+    }
+  }
   .app_item {
     &::before {
       top: 2000px;
@@ -509,6 +529,16 @@
     }
   }
   .part.text {
+    .inner {
+      .centered {
+        h1 {
+          font-size: 2.1rem;
+        }
+        h3 {
+          font-size: 1.1rem;
+        }
+      }
+    }
     &::before {
       left: 17px;
     }
@@ -526,7 +556,33 @@
   }
   .part {
     &.image {
-      left: 17.5%;
+      left: 10.5%;
+      .image-slide {
+        width: 77%;
+      }
+    }
+  }
+  .area3 {
+    .text-sub1 {
+      margin-bottom: 4rem;
+    }
+    .box-text {
+      .text-date {
+        padding-top: 18%;
+      }
+    }
+    .box-clock {
+      transform: translate(-50%, -50%) scale(1.7);
+    }
+  }
+  .circle {
+    .txt_box {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    .txt_box_right {
+      transform: scale(1);
     }
   }
 }
@@ -564,6 +620,14 @@
       }
     }
   }
+  .part {
+    &.image {
+      left: 16.5%;
+      .image-slide {
+        width: 64%;
+      }
+    }
+  }
   #app {
     .app_item {
       margin-top: 40%;
@@ -586,7 +650,7 @@
       }
       .inner {
         .centered {
-          padding-top: 11%;
+          padding-top: 4%;
           h1 {
             font-size: 1.875rem;
           }
@@ -602,19 +666,23 @@
         }
         .paginator {
           left: 47%;
-          bottom: 90%;
+          bottom: 94%;
         }
       }
     }
     &.image {
       top: -250px;
       overflow: hidden;
+      transform: scale(0.9);
     }
   }
   .area3 {
+    .text-sub1 {
+      margin-bottom: 1rem;
+    }
     .box-text {
       .text-date {
-        padding-top: 20%;
+        padding-top: 19%;
       }
     }
   }
@@ -654,6 +722,4 @@
       }
     }
   }
-}
-@media screen and (max-width: 428px) {
 }

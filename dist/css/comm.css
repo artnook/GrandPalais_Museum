@@ -1195,7 +1195,7 @@ legend {
   line-height: normal;
 }
 .area3 .text-sub1 {
-  margin-bottom: 13rem;
+  margin-bottom: 7rem;
 }
 .area3 .text-sub2 {
   color: #333;
@@ -1210,7 +1210,7 @@ legend {
   text-align: center;
   font-size: 7vw;
   line-height: normal;
-  padding-top: 20%;
+  padding-top: 31%;
 }
 .area3 .clock {
   width: 100%;
@@ -1260,7 +1260,7 @@ legend {
   font-weight: 500;
   line-height: normal;
   position: absolute;
-  bottom: 29%;
+  bottom: 25%;
 }
 .area3 .box-clock {
   position: absolute;
@@ -1336,12 +1336,30 @@ legend {
   .inner {
     padding: 0 25px;
   }
+  .exb-museum .contetnt_area::before {
+    font-size: 9rem;
+  }
+  .exb-museum .exb-box .txt-box h2 {
+    font-size: 1rem;
+  }
+  .exb-museum .exb-box .txt-box .g_title {
+    font-size: 2.2rem;
+  }
+  .exb-museum .exb-box .txt-box .g_tit {
+    font-size: 1.11rem;
+  }
   .app_item::before {
     top: 2000px;
     left: 45px;
   }
   .app_item .inner .part .image {
     left: 213px;
+  }
+  .part.text .inner .centered h1 {
+    font-size: 2.1rem;
+  }
+  .part.text .inner .centered h3 {
+    font-size: 1.1rem;
   }
   .part.text::before {
     left: 17px;
@@ -1354,7 +1372,25 @@ legend {
     height: 30px;
   }
   .part.image {
-    left: 17.5%;
+    left: 10.5%;
+  }
+  .part.image .image-slide {
+    width: 77%;
+  }
+  .area3 .text-sub1 {
+    margin-bottom: 4rem;
+  }
+  .area3 .box-text .text-date {
+    padding-top: 18%;
+  }
+  .area3 .box-clock {
+    transform: translate(-50%, -50%) scale(1.7);
+  }
+  .circle .txt_box h2 {
+    font-size: 2rem;
+  }
+  .circle .txt_box_right {
+    transform: scale(1);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1387,6 +1423,12 @@ legend {
     display: flex;
     padding-left: 110px;
   }
+  .part.image {
+    left: 16.5%;
+  }
+  .part.image .image-slide {
+    width: 64%;
+  }
   #app .app_item {
     margin-top: 40%;
   }
@@ -1406,7 +1448,7 @@ legend {
     display: none;
   }
   .part.text .inner .centered {
-    padding-top: 11%;
+    padding-top: 4%;
   }
   .part.text .inner .centered h1 {
     font-size: 1.875rem;
@@ -1422,14 +1464,18 @@ legend {
   }
   .part.text .inner .paginator {
     left: 47%;
-    bottom: 90%;
+    bottom: 94%;
   }
   .part.image {
     top: -250px;
     overflow: hidden;
+    transform: scale(0.9);
+  }
+  .area3 .text-sub1 {
+    margin-bottom: 1rem;
   }
   .area3 .box-text .text-date {
-    padding-top: 20%;
+    padding-top: 19%;
   }
 }
 @media screen and (max-width: 744px) {
