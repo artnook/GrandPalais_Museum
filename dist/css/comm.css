@@ -1180,6 +1180,7 @@ legend {
   margin: 0 auto;
 }
 .area3 .text-head .text1 {
+  display: block;
   color: #333;
   text-align: center;
   font-size: 6vw;
@@ -1187,6 +1188,7 @@ legend {
   line-height: normal;
 }
 .area3 .text-head .text2 {
+  display: block;
   color: #1388ff;
   text-align: center;
   font-family: Roboto;
@@ -1210,7 +1212,7 @@ legend {
   text-align: center;
   font-size: 7vw;
   line-height: normal;
-  padding-top: 31%;
+  padding-top: 37%;
 }
 .area3 .clock {
   width: 100%;
@@ -1378,10 +1380,10 @@ legend {
     width: 77%;
   }
   .area3 .text-sub1 {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
   }
   .area3 .box-text .text-date {
-    padding-top: 18%;
+    padding-top: 23%;
   }
   .area3 .box-clock {
     transform: translate(-50%, -50%) scale(1.7);
@@ -1448,7 +1450,7 @@ legend {
     display: none;
   }
   .part.text .inner .centered {
-    padding-top: 4%;
+    padding-top: 10%;
   }
   .part.text .inner .centered h1 {
     font-size: 1.875rem;
@@ -1472,7 +1474,7 @@ legend {
     transform: scale(0.9);
   }
   .area3 .text-sub1 {
-    margin-bottom: 1rem;
+    margin-bottom: 8rem;
   }
   .area3 .box-text .text-date {
     padding-top: 19%;
@@ -1484,10 +1486,16 @@ legend {
   }
   .part.image {
     left: 5%;
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
   .part.image .image-slide {
     width: 93%;
+  }
+  .area3 svg {
+    transform: scale(0.7);
+  }
+  .area3 .text-sub1 {
+    margin-bottom: 4rem;
   }
   .part.text {
     margin-top: -61%;

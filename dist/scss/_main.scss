@@ -332,6 +332,7 @@
     }
   }
   .text-head .text1 {
+    display: block;
     color: #333;
     text-align: center;
     font-size: 6vw;
@@ -339,6 +340,7 @@
     line-height: normal;
   }
   .text-head .text2 {
+    display: block;
     color: #1388ff;
     text-align: center;
     font-family: Roboto;
@@ -362,7 +364,7 @@
     text-align: center;
     font-size: 7vw;
     line-height: normal;
-    padding-top: 31%;
+    padding-top: 37%;
   }
 
   .clock {
@@ -564,11 +566,11 @@
   }
   .area3 {
     .text-sub1 {
-      margin-bottom: 4rem;
+      margin-bottom: 7rem;
     }
     .box-text {
       .text-date {
-        padding-top: 18%;
+        padding-top: 23%;
       }
     }
     .box-clock {
@@ -650,7 +652,7 @@
       }
       .inner {
         .centered {
-          padding-top: 4%;
+          padding-top: 10%;
           h1 {
             font-size: 1.875rem;
           }
@@ -678,7 +680,7 @@
   }
   .area3 {
     .text-sub1 {
-      margin-bottom: 1rem;
+      margin-bottom: 8rem;
     }
     .box-text {
       .text-date {
@@ -698,10 +700,18 @@
   .part {
     &.image {
       left: 5%;
-      transform: scale(0.9);
+      transform: scale(0.8);
       .image-slide {
         width: 93%;
       }
+    }
+  }
+  .area3 {
+    svg {
+      transform: scale(0.7);
+    }
+    .text-sub1 {
+      margin-bottom: 4rem;
     }
   }
   .part {
